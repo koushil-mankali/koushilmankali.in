@@ -23,7 +23,7 @@ const Navbar = () => {
         : <Image onClick={handleMenuToogle} src={cancelIcon} width="20px" height="20px" alt="cancel icon" className={css.icon} /> }
     </div>
     <div className={toggleMenu ? css.sec2 : [css.sec2, css.sec2Click].join(' ')}>
-        <Link href="#home">
+        <Link href="/#home">
           <div
             className={
               router.asPath === "/#home" || router.asPath === "/"
@@ -35,7 +35,7 @@ const Navbar = () => {
             home
           </div>
         </Link>
-        <Link href="#blog">
+        <Link href="/#blog">
           <div
             className={
               router.asPath === "/#blog"
@@ -47,7 +47,7 @@ const Navbar = () => {
             blog
           </div>
         </Link>
-        <Link href="#about">
+        <Link href="/#about">
           <div
             className={
               router.asPath === "/#about"
@@ -59,7 +59,7 @@ const Navbar = () => {
             about
           </div>
         </Link>
-        <Link href="#work">
+        <Link href="/#work">
           <div
             className={
               router.asPath === "/#work"
@@ -71,7 +71,7 @@ const Navbar = () => {
             work
           </div>
         </Link>
-        <Link href="#skills">
+        <Link href="/#skills">
           <div
             className={
               router.asPath === "/#skills"
@@ -83,7 +83,7 @@ const Navbar = () => {
             skills
           </div>
         </Link>
-        <Link href="#contact">
+        <Link href="/#contact">
           <div
             className={
               router.asPath === "/#contact"
@@ -95,7 +95,7 @@ const Navbar = () => {
             contact
           </div>
         </Link>
-        <Link href="#resume">
+        <Link href="/#resume">
           <div
             className={[css.menuLinkTxt, css.btn].join(' ')}
             onClick={handleMenuToogle}

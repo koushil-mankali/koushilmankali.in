@@ -1,0 +1,35 @@
+.btn{
+    margin: 1rem;
+    color: var(--white-alpha-color);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.8rem 1rem;
+    border: var(--brd-crimson-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: var(--darkish-blue-color);
+    transition: 0.5s;
+}
+
+.btnActive{
+    background-color: var(--crimson-color);
+}
+
+.btn:hover{
+    transition: 0.5s;
+    background-color: var(--crimson-color);
+}
+
+@media all and (max-width: 1024px){
+    .btn{
+        padding: 0.8rem;
+    }
+}
+
+@media all and (max-width: 480px){
+    .btn{
+        font-size: 0.8rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+}

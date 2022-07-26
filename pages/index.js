@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import HeroSection from '../components/HeroSection/HeroSection'
+import AboutComponent from '../components/AboutComponent/AboutComponent'
+import ProjectsComponent from '../components/ProjectsComponent/ProjectsComponent'
 
 export default function Home() {
   return (
@@ -32,7 +34,8 @@ export default function Home() {
         <meta name="next-head-count" content="18" />
       </Head>
       <HeroSection />
-      
+      <AboutComponent />
+      <ProjectsComponent />
     </div>
   );
 }

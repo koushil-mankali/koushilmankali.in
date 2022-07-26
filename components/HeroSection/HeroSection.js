@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import css from "./HeroSection.module.css";
 
-import Button from '../Button/Button'
+import Button from '../Button/RedBtn/Button'
 
 const HeroSection = () => {
   return (

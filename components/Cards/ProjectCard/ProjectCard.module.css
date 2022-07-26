@@ -1,0 +1,70 @@
+.outerDiv{
+    width: 330px;
+    height: auto;
+    max-height: 500px;
+    padding: 0.7rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--black-pearl-color);
+    color: var(--white-alpha-color);
+}
+
+.bdy{
+ /* padding: 0 1rem; */
+}
+
+.ttl{
+    margin: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.desc{
+    font-size: 1rem;
+    text-align: left;
+}
+
+.stack{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.rtxt{
+    color: var(--crimson-color);
+    margin-right: 0.5rem;
+}
+
+.wtxt{
+    font-size: 1rem;
+}
+
+.imgBox{
+    border-radius: 5px;
+}
+
+.img{
+    border-radius: 5px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover{
+    border-radius: 50%;
+    background-color: var(--crimson-bg-color);
+}
