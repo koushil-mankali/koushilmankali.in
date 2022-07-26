@@ -1,0 +1,39 @@
+.outerDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-mirage-color);
+}
+
+.innerDiv{
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    /* background-color: tan; */
+}
+
+.ttl{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: "Luckiest Guy", cursive;
+    color: tomato;
+   
+    text-shadow: -6px -6px #4d84c8, -5px -5px #4d84c8,
+    -4px -4px #4d84c8, -3px -3px #4d84c8, -2px -2px #4d84c8,
+    -1px -1px #4d84c8, 1px 1px #4d84c8, 2px 2px #4d84c8,
+    3px 3px #4d84c8, 4px 4px #4d84c8, 5px 5px #4d84c8,
+    6px 6px #4d84c8, 7px 7px #4d84c8, 8px 8px #4d84c8,
+    9px 9px #4d84c8, 10px 10px #4d84c8, 11px 11px #4d84c8;
+}
+
+.ttlS{
+    color: var(--white-alpha-color);
+}
+
+.bdy{
+    margin: 1rem 0;
+    display: flex;
+}

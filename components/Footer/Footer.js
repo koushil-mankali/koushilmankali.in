@@ -1,11 +1,23 @@
-import React from 'react'
+import React from "react";
 
-import css from './Footer.module.css'
+import css from "./Footer.module.css";
 
 const Footer = () => {
-    return <div className={css.footer}>
-        <div><span className={css.txt1}>Made in ❤️ with India by</span> <span className={css.txt2}>Koushil Mankali</span></div>
+  return (
+    <div className={css.footer}>
+      <div>
+        <span className={css.txt1}>Made in ❤️ with India by</span>
+        <a
+          href="https://www.linkedin.com/in/koushil-mankali/"
+          target="_blank"
+          className={css.txt2}
+          rel="noreferrer"
+        >
+          Koushil Mankali
+        </a>
+      </div>
     </div>
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,0 +1,17 @@
+.outerDiv{
+    margin: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: justify;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: var(--white-alpha-color);
+}
