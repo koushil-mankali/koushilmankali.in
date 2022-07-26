@@ -10,13 +10,16 @@
 }
 
 .txt1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--crimson-color);
 }
 
 .txt2{
-    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #eee;
+    cursor: pointer;
+    text-decoration: none;
 }
