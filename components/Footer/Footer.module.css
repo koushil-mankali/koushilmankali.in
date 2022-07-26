@@ -7,19 +7,30 @@
     position: relative;
     bottom:0;
     margin-top: 100%;
+    font-size: 1.2rem;
 }
 
 .txt1{
-    font-size: 1.2rem;
     font-weight: 500;
     color: var(--crimson-color);
 }
 
 .txt2{
     margin-left: 0.5rem;
-    font-size: 1.2rem;
     font-weight: 500;
     color: #eee;
     cursor: pointer;
     text-decoration: none;
+}
+
+@media all and (max-width: 780px){
+    .footer{
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 480px){
+    .footer{
+        font-size: 0.8rem;
+    }
 }
