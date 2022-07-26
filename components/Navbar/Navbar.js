@@ -97,11 +97,7 @@ const Navbar = () => {
         </Link>
         <Link href="#resume">
           <div
-            className={
-              router.asPath === "/#resume"
-                ? [css.menuLinkTxt, css.activeMenuLinkTxt].join(" ")
-                : css.menuLinkTxt
-            }
+            className={[css.menuLinkTxt, css.btn].join(' ')}
             onClick={handleMenuToogle}
           >
             resume

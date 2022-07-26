@@ -53,6 +53,15 @@
     display: none !important;
 }
 
+.btn{
+    transition: 0.5s;
+    padding: 0.6em;
+    border-radius: 5px;
+    color: var(--white-alpha-color);
+    background-color: var(--crimson-color);
+}
+
+
 @media all and (max-width: 1024px){
     
     .sec1{
