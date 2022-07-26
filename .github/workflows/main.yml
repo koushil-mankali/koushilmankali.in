@@ -25,7 +25,6 @@ jobs:
         with:
           username: ${{ secrets.FTP_USERNAME }}
           server: ${{ secrets.FTP_SERVER }}
-          port: 21 # default is 22
           ssh_private_key: ${{ secrets.SSH_KEY }}
  
           
