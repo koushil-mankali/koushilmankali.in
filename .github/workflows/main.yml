@@ -1,7 +1,9 @@
 on:
   push:
+    branches:
+      - master
     paths:
-      - 'dist/*'
+      - '/*'
 name: FTP Deploy
 jobs:
   FTP-Deploy-Action:
