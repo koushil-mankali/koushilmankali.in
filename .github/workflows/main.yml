@@ -1,8 +1,5 @@
-name: Publish Website to Web Hosting
-on:
-  push:
-    branches:
-      - master
+on: push
+name: Publish Website to FTP
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -14,6 +11,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ${{ secrets.FTP_SERVER }}
+        ftp-server: ftp://${{ secrets.FTP_SERVER }}
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
+        git-ftp-args: --insecure
