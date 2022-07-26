@@ -12,6 +12,8 @@
     --darkish-blue-bg-color: rgb(23, 48, 99);
 
     /* borders  */
+    --brd-crimson-color-3px: 3px solid crimson;
+
     --brd-crimson-color: 1px solid crimson;
     --brd-black-russian-color : 1px solid #0F1624;
     --brd-white-alpha-color: 1px solid rgba(255, 255, 255, 0.92);
