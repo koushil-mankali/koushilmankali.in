@@ -8,6 +8,7 @@
     border: none;
     background-color: var(--black-pearl-color);
     color: var(--white-alpha-color);
+    cursor: context-menu;
 }
 
 .bdy{

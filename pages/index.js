@@ -6,6 +6,7 @@ import HeroSection from '../components/HeroSection/HeroSection'
 import AboutComponent from '../components/AboutComponent/AboutComponent'
 import ProjectsComponent from '../components/ProjectsComponent/ProjectsComponent'
 import SkillsComponent from '../components/SkillsComponent/SkillsComponent'
+import ContactComponent from '../components/ContactComponent/ContactComponent'
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
       <AboutComponent />
       <ProjectsComponent />
       <SkillsComponent />
+      <ContactComponent />
     </div>
   );
 }
