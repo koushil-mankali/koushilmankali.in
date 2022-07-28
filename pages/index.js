@@ -9,6 +9,7 @@ import SkillsComponent from '../components/SkillsComponent/SkillsComponent'
 import ContactComponent from '../components/ContactComponent/ContactComponent'
 
 export default function Home() {
+  console.log("SEND_GRID_KEY", process.env.SEND_GRID_KEY)
   return (
     <div className={styles.container}>
       <Head>

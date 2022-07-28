@@ -26,6 +26,15 @@
     }
 }
 
+
+@media all and (max-width: 780px){
+    
+    .btn{
+        font-size: 0.8rem;
+        padding: 0.6rem;
+    }
+}
+
 @media all and (max-width: 480px){
     .btn{
         font-size: 0.8rem;

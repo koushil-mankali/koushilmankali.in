@@ -1,0 +1,16 @@
+.txt{
+    font-size: 1.5rem;
+    color: var(--crimson-color);
+}
+
+@media all and (max-width: 780px){
+    .txt{
+        font-size: 1.2rem;
+    }
+}
+
+@media all and (max-width: 480px){
+    .txt{
+        font-size: 1rem;
+    }
+}

@@ -1,6 +1,7 @@
 .outerDiv{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +30,7 @@
 .btns{
     margin: 1rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -37,6 +39,21 @@
     margin: 1rem 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+}
+
+@media all and (max-width: 780px){
+    .innerDiv{
+        width: 80%;
+    }
+    .ttl{
+        font-size: 2rem;
+    }
+}
+
+@media all and (max-width: 480px){
+    .innerDiv{
+        width: 90%;
+    }
 }

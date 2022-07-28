@@ -3,6 +3,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from 'yup';
 
+import AlertComponent from "../AlertComponent/AlertComponent";
 import css from "./ContactComponent.module.css";
 
 const ContactComponent = () => {
@@ -31,6 +32,7 @@ const ContactComponent = () => {
         </div>
         <div className={css.bdy}>
           <div className={css.mailBox}>
+          <AlertComponent />
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}

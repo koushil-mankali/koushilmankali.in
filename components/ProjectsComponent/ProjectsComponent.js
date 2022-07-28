@@ -18,95 +18,61 @@ const ProjectsComponent = () => {
   const data = [
     {
       img: GetTheAppImg,
-      ttl: "Zomato Clone",
+      ttl: "Zomato Clonef",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
       video: "",
       live: "",
       git: "",
+      type: "frontend"
     },
     {
       img: GetTheAppImg,
-      ttl: "Zomato Clone",
+      ttl: "Zomato Cloneb",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
       video: "",
       live: "",
       git: "",
+      type: "backend"
     },
     {
       img: GetTheAppImg,
-      ttl: "Zomato Clone",
+      ttl: "Zomato Clone mern",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
       video: "",
       live: "",
       git: "",
-    },
-    {
-      img: GetTheAppImg,
-      ttl: "Zomato Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
-      video: "",
-      live: "",
-      git: "",
-    },
-    {
-      img: GetTheAppImg,
-      ttl: "Zomato Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
-      video: "",
-      live: "",
-      git: "",
-    },
-    {
-      img: GetTheAppImg,
-      ttl: "Zomato Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
-      video: "",
-      live: "",
-      git: "",
-    },
-    {
-      img: GetTheAppImg,
-      ttl: "Zomato Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
-      video: "",
-      live: "",
-      git: "",
-    },
-    {
-      img: GetTheAppImg,
-      ttl: "Zomato Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
-      video: "",
-      live: "",
-      git: "",
-    },
-    {
-      img: GetTheAppImg,
-      ttl: "Zomato Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
-      video: "",
-      live: "",
-      git: "",
-    },
-    {
-      img: GetTheAppImg,
-      ttl: "Zomato Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
-      video: "",
-      live: "",
-      git: "",
+      type: "mern"
     },
   ];
+
+  let cardData = "";
+  
+  if(active.all){
+    cardData = data?.filter((item) => {
+      return item;
+    })
+  } else if (active.frontend){
+    cardData = data?.filter((item) => {
+      if(item.type === "frontend"){
+        return item;
+      }
+    })
+  } else if (active.backend){
+    cardData = data?.filter((item) => {
+      if(item.type === "backend"){
+        return item;
+      }
+    })
+  } else if (active.mern){
+    cardData = data?.filter((item) => {
+      if(item.type === "mern"){
+        return item;
+      }
+    })
+  } 
 
   const handleBtn = (key) => {
     setActive((val) => {
@@ -143,7 +109,7 @@ const ProjectsComponent = () => {
           />
         </div>
         <div className={css.bdy}>
-          {data?.map((item, id) => {
+          {cardData?.map((item, id) => {
             return <ProjectCard key={id} item={item} />;
           })}
         </div>

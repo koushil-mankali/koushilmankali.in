@@ -21,3 +21,10 @@
 .outerDiv:hover{
     background-color: var(--black-russian-color);
 }
+
+@media all and (max-width: 780px){
+    .outerDiv{
+        width: 90px;
+        height: 100px;
+    }
+}

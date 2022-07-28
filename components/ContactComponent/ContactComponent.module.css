@@ -103,3 +103,45 @@
     background-color: var(--crimson-bg-color);
     cursor: pointer;
 }
+
+@media all and (max-width: 780px){
+    .innerDiv{
+        width: 80%;
+    }
+    .ttl{
+        font-size: 2rem;
+    }
+
+    .inpFieldT{
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+
+    .sendBtn{
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 480px){
+    .btns{
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: row;
+       justify-content: center;
+    }
+
+    .btn{
+        margin: 1rem;
+    }
+
+    .bdy{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mailBox{
+        width: 100%;
+    }
+}

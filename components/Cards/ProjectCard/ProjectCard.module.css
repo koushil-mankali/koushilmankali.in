@@ -68,3 +68,26 @@
     border-radius: 50%;
     background-color: var(--crimson-bg-color);
 }
+
+@media all and (max-width: 480px){
+    .outerDiv{
+        margin: 0.5rem;
+    }
+
+    .ttl{
+        font-size: 1rem;
+    }
+    
+    .desc{
+        font-size: 0.9rem;
+    }
+    
+    .stack{
+        font-size: 0.9rem;
+    }
+
+    .wtxt{
+        font-size: 0.8rem;
+    }
+    
+}
