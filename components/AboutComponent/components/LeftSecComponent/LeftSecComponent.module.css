@@ -8,6 +8,14 @@
     align-items: center;
 }
 
+.imgBox{
+    margin: 1rem;
+}
+
+.img{
+    border-radius: 10px;
+}
+
 .about{
     font-size: 1.3rem;
     font-weight: 400;

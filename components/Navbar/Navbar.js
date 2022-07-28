@@ -26,7 +26,7 @@ const Navbar = () => {
         <Link href="/#home">
           <div
             className={
-              router.asPath === "/#home" || router.asPath === "/"
+              (router.asPath === "/#home" || router.asPath === "/")
                 ? [css.menuLinkTxt, css.activeMenuLinkTxt].join(" ")
                 : css.menuLinkTxt
             }
@@ -35,7 +35,7 @@ const Navbar = () => {
             home
           </div>
         </Link>
-        <Link href="/#blog">
+        <a target="_blank" href="https://blog.koushilmankali.com/">
           <div
             className={
               router.asPath === "/#blog"
@@ -46,7 +46,7 @@ const Navbar = () => {
           >
             blog
           </div>
-        </Link>
+        </a>
         <Link href="/#about">
           <div
             className={

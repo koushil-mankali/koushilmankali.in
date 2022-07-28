@@ -115,7 +115,7 @@ const ProjectsComponent = () => {
   };
 
   return (
-    <div className={css.outerDiv}>
+    <div className={css.outerDiv} id='work'>
       <div className={css.innerDiv}>
         <div className={css.ttl}>
           All The <span className={css.ttlS}>Projects</span> I Have Done

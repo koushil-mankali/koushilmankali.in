@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import HeroSection from '../components/HeroSection/HeroSection'
 import AboutComponent from '../components/AboutComponent/AboutComponent'
 import ProjectsComponent from '../components/ProjectsComponent/ProjectsComponent'
+import SkillsComponent from '../components/SkillsComponent/SkillsComponent'
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <HeroSection />
       <AboutComponent />
       <ProjectsComponent />
+      <SkillsComponent />
     </div>
   );
 }

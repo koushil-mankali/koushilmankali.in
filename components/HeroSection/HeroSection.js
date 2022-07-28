@@ -6,7 +6,7 @@ import Button from '../Button/RedBtn/Button'
 
 const HeroSection = () => {
   return (
-    <div className={css.outerDiv}>
+    <div className={css.outerDiv} id='home'>
         <div className={css.innerDiv}>
             <div className={css.sec1}>
                 <div className={css.intTtl}>Hi, I am</div>

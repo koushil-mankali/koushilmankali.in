@@ -1,0 +1,23 @@
+.outerDiv{
+    width: 110px;
+    height: 130px;
+    margin: 0.5rem;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--black-pearl-color);
+    cursor: pointer;
+}
+
+.nameC{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: var(--white-alpha-color);
+}
+
+.outerDiv:hover{
+    background-color: var(--black-russian-color);
+}

@@ -9,10 +9,9 @@
 }
 
 .innerDiv{
-    width: 80%;
+    width: 70%;
     height: 100%;
-    padding: 2rem;
-    /* background-color: tan; */
+    padding: 1rem;
 }
 
 .ttl{
@@ -25,7 +24,18 @@
 .ttlS{
     color: var(--crimson-color);
 }
+
+.btns{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .bdy{
     margin: 1rem 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
 }
