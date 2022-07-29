@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import Link from "next/Link";
-import Image from "next/Image";
+import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 import menuIcon from "../../public/Images/menu.png";
@@ -35,7 +35,7 @@ const Navbar = () => {
             home
           </div>
         </Link>
-        <a target="_blank" href="https://blog.koushilmankali.com/">
+        <a target="_blank" rel="noreferrer" href="https://blog.koushilmankali.com/">
           <div
             className={
               router.asPath === "/#blog"

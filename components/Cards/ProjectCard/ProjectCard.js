@@ -8,7 +8,7 @@ import eyeIcon from '../../../public/Images/eye.png'
 
 import css from './ProjectCard.module.css'
 
-const ProjectCard = ({item}) => {
+const ProjectCard = ({item = {}}) => {
   return <div className={css.outerDiv}>
     <div className={css.imgBox}>
         <Image src={item.img} alt="project image" className={css.img} />

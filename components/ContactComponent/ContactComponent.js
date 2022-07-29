@@ -68,6 +68,7 @@ const ContactComponent = () => {
           <div className={css.btns}>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://www.linkedin.com/in/koushil-mankali/"
               className={css.btn}
               style={{ backgroundColor: "#9BDAF3" }}
@@ -76,6 +77,7 @@ const ContactComponent = () => {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/koushil-mankali"
               className={css.btn}
               style={{
@@ -87,6 +89,7 @@ const ContactComponent = () => {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="mailto:kousilmankali@gmail.com"
               className={css.btn}
               style={{ backgroundColor: "#FEB2B2" }}
@@ -95,6 +98,7 @@ const ContactComponent = () => {
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://wa.me/8465995039"
               className={css.btn}
               style={{ backgroundColor: "rgb(37, 211, 102)" }}
