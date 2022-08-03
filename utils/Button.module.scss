@@ -1,0 +1,26 @@
+.button {
+  font-weight: 600;
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #0a192f;
+  color: #d3d3d3;
+  border: 1px solid #fca311;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .button {
+    margin: 10px !important;
+    padding: 10px !important;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .button {
+    margin: 10px !important;
+    padding: 10px !important;
+  }
+}

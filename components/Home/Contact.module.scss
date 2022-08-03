@@ -1,0 +1,113 @@
+.container {
+  width: 70vmax;
+  height: 70vh;
+  margin: 100px auto;
+
+  .error {
+    color: red;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+}
+
+.innerContainer {
+  margin: 50px auto;
+  width: 90%;
+}
+.form {
+  width: 80%;
+  margin: auto;
+}
+
+.inptDiv {
+  width: 100%;
+  height: 40px;
+  margin: 30px 0;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.inpt,
+.messText {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.messText {
+  padding: 10px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.sendBtn {
+  float: right;
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 550;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #00afb9;
+  background-color: #fca311;
+}
+
+@media all and (max-width: 750px) {
+  .container {
+    width: 60vmax;
+    margin: 100px 60px;
+  }
+
+  .form {
+    width: 100%;
+    margin: auto;
+  }
+  .label {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 650px) {
+  .container {
+    width: 80%;
+    margin: 100px 60px;
+  }
+
+  .form {
+    width: 100%;
+    margin: auto;
+  }
+  .label {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .h1 {
+    font-size: 30px;
+  }
+  .label {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 500px) {
+  .h1 {
+    font-size: 24px;
+  }
+  .label {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-height: 1000px) {
+  .container {
+    margin: 20px auto;
+  }
+}

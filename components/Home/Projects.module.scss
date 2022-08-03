@@ -1,0 +1,17 @@
+.projects {
+  width: 75%;
+  height: auto;
+  margin: 50px auto;
+  .ht {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .projectsDiv {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-gap: 20px;
+  }
+}

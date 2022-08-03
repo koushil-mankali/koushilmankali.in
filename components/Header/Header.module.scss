@@ -1,0 +1,130 @@
+$backgroundColor: #0a192f;
+$whiteColor: #d3d3d3;
+$borderColor: #eee;
+
+.header {
+  width: 100%;
+  height: 65px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 600;
+  border-bottom: 1px solid #112240;
+  overflow: hidden;
+
+  .ttl {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .bar {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cmmn {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+}
+
+// Theme Switch
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 10px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .headerRes {
+    height: 300px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+  }
+  .ttld {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .bar {
+    display: block !important;
+  }
+  .menu {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+
+    .cmmn {
+      margin: 10px auto;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.about {
+  width: 75%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 200px;
+  .ht {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .innerDiv {
+    margin: 50px 0;
+    display: flex;
+    .imgDiv {
+      width: 30%;
+      margin-right: 30px;
+      .imgTag {
+        border-radius: 25px;
+      }
+    }
+    .abtDiv {
+      width: 70%;
+      .p {
+        text-align: justify;
+        font-weight: 450;
+        font-size: 1.2rem;
+      }
+      .ul {
+        font-weight: 500;
+        font-size: 1.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .li {
+          list-style: none;
+        }
+
+        .li::before {
+          content: "\272A";
+          margin-left: -20px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .kmam {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .innerDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .imgDiv {
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+    }
+    .abtDiv {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .innerDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .imgDiv {
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+    }
+    .abtDiv {
+      width: 100% !important;
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 425px) {
+  .ul {
+    width: 120% !important;
+    margin-left: -40px;
+    .ldiv {
+      font-size: 1rem;
+      margin: 10px 20px;
+    }
+  }
+}

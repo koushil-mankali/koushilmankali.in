@@ -1,0 +1,55 @@
+$backgroundColor: #0a192f;
+$whiteColor: #d3d3d3;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Light mode */
+body.light {
+  background: $whiteColor !important;
+  color: $backgroundColor !important;
+}
+
+/* Dark mode */
+body {
+  background: $backgroundColor;
+  color: $whiteColor;
+}
+
+@media (min-width: 1281px) {
+  /* CSS */
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+}
