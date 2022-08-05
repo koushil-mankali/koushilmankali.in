@@ -13,12 +13,13 @@ const ProjectsComponent = () => {
     frontend: false,
     backend: false,
     mern: false,
+    hcj: false,
   });
 
   const data = [
     {
       img: GetTheAppImg,
-      ttl: "Zomato Clonef",
+      ttl: "Zomato Clone",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
       video: "",
@@ -28,7 +29,7 @@ const ProjectsComponent = () => {
     },
     {
       img: GetTheAppImg,
-      ttl: "Zomato Cloneb",
+      ttl: "Uclone(Udemy Clone)",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
       video: "",
@@ -38,13 +39,63 @@ const ProjectsComponent = () => {
     },
     {
       img: GetTheAppImg,
-      ttl: "Zomato Clone mern",
+      ttl: "Covid Help Disk",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
       video: "",
       live: "",
       git: "",
       type: "mern"
+    },
+     {
+      img: GetTheAppImg,
+      ttl: "Netflix Clone",
+      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
+      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
+      video: "",
+      live: "",
+      git: "",
+      type: "mern"
+    },
+     {
+      img: GetTheAppImg,
+      ttl: "Instagram Clone",
+      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
+      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
+      video: "",
+      live: "",
+      git: "",
+      type: "mern"
+    },
+     {
+      img: GetTheAppImg,
+      ttl: "Content Management System",
+      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
+      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
+      video: "",
+      live: "",
+      git: "",
+      type: "mern"
+    },
+     {
+      img: GetTheAppImg,
+      ttl: "Shopping Site Frontend",
+      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
+      stack: "HTML, CSS, JavaScript",
+      video: "",
+      live: "",
+      git: "",
+      type: "hcj"
+    },
+     {
+      img: GetTheAppImg,
+      ttl: "Hotel Site Forntend",
+      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
+      stack: "HTML, CSS, JavaScript",
+      video: "",
+      live: "",
+      git: "",
+      type: "hcj"
     },
   ];
 
@@ -69,6 +120,12 @@ const ProjectsComponent = () => {
   } else if (active.mern){
     cardData = data?.filter((item) => {
       if(item.type === "mern"){
+        return item;
+      }
+    })
+  } else if (active.hcj){
+    cardData = data?.filter((item) => {
+      if(item.type === "hcj"){
         return item;
       }
     })
@@ -106,6 +163,11 @@ const ProjectsComponent = () => {
             txt="MERN Stack"
             onClick={() => handleBtn("mern")}
             isActive={active?.mern}
+          />
+          <GreyBtn
+            txt="HTML, CSS, JS"
+            onClick={() => handleBtn("hcj")}
+            isActive={active?.hcj}
           />
         </div>
         <div className={css.bdy}>
