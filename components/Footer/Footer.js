@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className={css.footer}>
       <div>
-        <span className={css.txt1}>Made in ❤️ with India by</span>
+        <span className={css.txt1}>Made with ❤️ in India by</span>
         <a
           href="https://www.linkedin.com/in/koushil-mankali/"
           target="_blank"
