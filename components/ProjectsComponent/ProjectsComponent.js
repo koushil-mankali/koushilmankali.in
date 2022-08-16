@@ -2,7 +2,14 @@ import { useState } from "react";
 
 import css from "./ProjectsComponent.module.css";
 
-import GetTheAppImg from '../../public/Images/GetTheApp.png'
+import BlogCMSImg from '../../public/Images/projects/BlogCMS.png'
+import covidHDImg from '../../public/Images/projects/Covid-Help-Disk.png'
+import EshopImg from '../../public/Images/projects/Eshop.png'
+import instaCloneImg from '../../public/Images/projects/instagram-clone.png'
+import mkHTLImg from '../../public/Images/projects/MK-Hotels.png'
+import netflixImg from '../../public/Images/projects/Netflix-Clone.png'
+import ucloneImg from '../../public/Images/projects/udemy-clone.png'
+import zomatoCImg from '../../public/Images/projects/zomato-clone.png'
 
 import GreyBtn from "../Button/GreyBtn/Button";
 import ProjectCard from "../Cards/ProjectCard/ProjectCard";
@@ -18,17 +25,19 @@ const ProjectsComponent = () => {
 
   const data = [
     {
-      img: GetTheAppImg,
+      img: zomatoCImg,
+      link: "/project/zomato-clone",
       ttl: "Zomato Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
-      video: "",
-      live: "",
-      git: "",
+      desc: "Zomato Clone - Food Delivery Application Clone using React JS. In this Zomato App clone I have cloned maximum pages Home page, User Profile page, Food Selection page, Settings page etc... As it is only frontend clone I have added static data but in a dynamic way so data can be changed easily or added easily.",
+      stack: "React Js, HTML, CSS, JavaScript",
+      video: "https://www.youtube.com/watch?v=lNfS_8bJA5c&ab_channel=KoushilMankali",
+      live: "https://zomatoclone.koushilmankali.com/",
+      git: "https://github.com/koushil-mankali/zomato_clone",
       type: "frontend"
     },
     {
-      img: GetTheAppImg,
+      img: ucloneImg,
+      link: "/project/zomato-clone",
       ttl: "Uclone(Udemy Clone)",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
@@ -38,7 +47,8 @@ const ProjectsComponent = () => {
       type: "backend"
     },
     {
-      img: GetTheAppImg,
+      img: covidHDImg,
+      link: "/project/zomato-clone",
       ttl: "Covid Help Disk",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
@@ -48,7 +58,8 @@ const ProjectsComponent = () => {
       type: "mern"
     },
      {
-      img: GetTheAppImg,
+      img: netflixImg,
+      link: "/project/zomato-clone",
       ttl: "Netflix Clone",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
@@ -58,7 +69,8 @@ const ProjectsComponent = () => {
       type: "mern"
     },
      {
-      img: GetTheAppImg,
+      img: instaCloneImg,
+      link: "/project/zomato-clone",
       ttl: "Instagram Clone",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
@@ -68,7 +80,8 @@ const ProjectsComponent = () => {
       type: "mern"
     },
      {
-      img: GetTheAppImg,
+      img: BlogCMSImg,
+      link: "/project/zomato-clone",
       ttl: "Content Management System",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
@@ -78,7 +91,8 @@ const ProjectsComponent = () => {
       type: "mern"
     },
      {
-      img: GetTheAppImg,
+      img: EshopImg,
+      link: "/project/zomato-clone",
       ttl: "Shopping Site Frontend",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, JavaScript",
@@ -88,7 +102,8 @@ const ProjectsComponent = () => {
       type: "hcj"
     },
      {
-      img: GetTheAppImg,
+      img: mkHTLImg,
+      link: "/project/zomato-clone",
       ttl: "Hotel Site Forntend",
       desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
       stack: "HTML, CSS, JavaScript",

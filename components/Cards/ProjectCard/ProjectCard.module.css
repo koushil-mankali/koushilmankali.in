@@ -8,10 +8,23 @@
     border: none;
     background-color: var(--black-pearl-color);
     color: var(--white-alpha-color);
-    cursor: context-menu;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.imgBox{
+    max-height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.img{
+    border-radius: 5px;
 }
 
 .bdy{
+    width: 100%;
+    height: 50%;
 }
 
 .ttl{
@@ -38,14 +51,6 @@
 
 .wtxt{
     font-size: 1rem;
-}
-
-.imgBox{
-    border-radius: 5px;
-}
-
-.img{
-    border-radius: 5px;
 }
 
 .btns{
