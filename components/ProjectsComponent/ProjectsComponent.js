@@ -26,7 +26,18 @@ const ProjectsComponent = () => {
   const data = [
     {
       img: zomatoCImg,
-      link: "/project/zomato-clone",
+      link: "/posts/koushil-mankali-portfolio",
+      ttl: "My Portfolio",
+      desc: "My Portfolio.",
+      stack: "React Js, Next Js, HTML, CSS, JavaScript",
+      video: "/",
+      live: "https://koushilmankali.com/",
+      git: "https://github.com/koushil-mankali/koushilmankali.com",
+      type: ["frontend", "backend", "mern"]
+    },
+    {
+      img: zomatoCImg,
+      link: "/posts/zomato-clone",
       ttl: "Zomato Clone",
       desc: "Zomato Clone - Food Delivery Application Clone using React JS. In this Zomato App clone I have cloned maximum pages Home page, User Profile page, Food Selection page, Settings page etc... As it is only frontend clone I have added static data but in a dynamic way so data can be changed easily or added easily.",
       stack: "React Js, HTML, CSS, JavaScript",
@@ -37,7 +48,7 @@ const ProjectsComponent = () => {
     },
     {
       img: ucloneImg,
-      link: "/project/uclone",
+      link: "/posts/uclone-udemy-clone-project",
       ttl: "Uclone(Udemy Clone)",
       desc: "Uclone its a Udemy replica which have almost all features like udemy.",
       stack: "PHP, MySQL, HTML, CSS, JavaScript",
@@ -48,7 +59,7 @@ const ProjectsComponent = () => {
     },
     {
       img: covidHDImg,
-      link: "/project/covid-help-disk",
+      link: "/posts/covid-help-disk",
       ttl: "Covid Help Disk",
       desc: "In this covid situation people are facing a lots of problems because of unavailability of beds, oxygen and medicines but actually we have enough stock of them just we need to use them effeciently so I have made a project which will help public (users) to know in which hospital beds, oxygen , medicine is available so that they can directly visit.",
       stack: "React Js, NodeJS, Express, MongoDB, HTML, CSS, JavaScript",
@@ -59,7 +70,7 @@ const ProjectsComponent = () => {
     },
      {
       img: netflixImg,
-      link: "/project/netflix-clone",
+      link: "/posts/netflix-clone",
       ttl: "Netflix Clone",
       desc: "It is a clone of netflix frontend using reactjs.",
       stack: "React JS, HTML, CSS, JavaScript",
@@ -70,7 +81,7 @@ const ProjectsComponent = () => {
     },
      {
       img: instaCloneImg,
-      link: "/project/instagram-clone",
+      link: "/posts/instagram-clone",
       ttl: "Instagram Clone",
       desc: "Instagram Clone using React Js and Firebase",
       stack: "React JS, Firebase HTML, CSS, JavaScript",
@@ -81,7 +92,7 @@ const ProjectsComponent = () => {
     },
      {
       img: BlogCMSImg,
-      link: "/project/blog-cms",
+      link: "/posts/content-management-system",
       ttl: "Content Management System",
       desc: "It is a Content Management System here admin can manage blog content and perform operations such as publish or update or delete articles. Articles are divided based on categories and admin can create/delete categories. Category count will be updated automatically when user publish/update/delete articles. Admin can add more admins or moderators.",
       stack: "PHP, MySQL, HTML, CSS, JavaScript",
@@ -92,7 +103,7 @@ const ProjectsComponent = () => {
     },
      {
       img: EshopImg,
-      link: "/project/shopping-site-frontend",
+      link: "/posts/shopping-site-frontend",
       ttl: "Shopping Site Frontend",
       desc: "It's and one page online shopping site only front end.",
       stack: "HTML, CSS, JavaScript",
@@ -103,7 +114,7 @@ const ProjectsComponent = () => {
     },
      {
       img: mkHTLImg,
-      link: "/project/zomato-clone",
+      link: "/posts/zomato-clone",
       ttl: "Hotel Site Forntend",
       desc: "Ecommerce shopping site frontend with html, css and javascript.",
       stack: "HTML, CSS, JavaScript",

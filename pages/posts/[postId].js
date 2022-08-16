@@ -5,7 +5,7 @@ import { getPostData, getPostsFiles } from "../../lib/post-util";
 
 import ReactMarkdown from "react-markdown";
 
-import postCss from "./Post.module.scss";
+import postCss from "./Post.module.css";
 
 let Post = (props) => {
   let { postData } = props;
