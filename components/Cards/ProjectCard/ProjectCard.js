@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import Image from "next/image";
 
@@ -10,9 +11,16 @@ import eyeIcon from "../../../public/Images/eye.png";
 import css from "./ProjectCard.module.css";
 
 const ProjectCard = ({ item = {} }) => {
+  const router = useRouter();
+
+  const handleLink = (e, link) => {
+    e.preventDefault();
+    router.push(link);
+  };
+
   return (
     <Link href={item?.link || "/"}>
-      <a className={css.outerDiv} target="_blank">
+      <div className={css.outerDiv}>
         <div className={css.imgBox}>
           <Image src={item.img} alt="project image" className={css.img} />
         </div>
@@ -24,24 +32,24 @@ const ProjectCard = ({ item = {} }) => {
             <span className={css.wtxt}>{item.stack}</span>
           </div>
           <div className={css.btns}>
-            <a href={item?.video || "/"} target="_blank" rel="noreferrer">
-              <div className={css.icon}>
-                <Image src={videoIcon} alt="icon" width="30px" height="30px" />
-              </div>
-            </a>
-            <a href={item?.git || "/"} target="_blank" rel="noreferrer">
-              <div className={css.icon}>
-                <Image src={githubIcon} alt="icon" width="30px" height="30px" />
-              </div>
-            </a>
-            <a href={item?.live || "/"} target="_blank" rel="noreferrer">
-              <div className={css.icon}>
-                <Image src={eyeIcon} alt="icon" width="30px" height="30px" />
-              </div>
-            </a>
+            <div
+              className={css.icon}
+              onClick={(e) => handleLink(e, item?.video)}
+            >
+              <Image src={videoIcon} alt="icon" width="30px" height="30px" />
+            </div>
+            <div className={css.icon} onClick={(e) => handleLink(e, item?.git)}>
+              <Image src={githubIcon} alt="icon" width="30px" height="30px" />
+            </div>
+            <div
+              className={css.icon}
+              onClick={(e) => handleLink(e, item?.live)}
+            >
+              <Image src={eyeIcon} alt="icon" width="30px" height="30px" />
+            </div>
           </div>
         </div>
-      </a>
+      </div>
     </Link>
   );
 };

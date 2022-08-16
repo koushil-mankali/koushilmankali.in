@@ -33,84 +33,84 @@ const ProjectsComponent = () => {
       video: "https://www.youtube.com/watch?v=lNfS_8bJA5c&ab_channel=KoushilMankali",
       live: "https://zomatoclone.koushilmankali.com/",
       git: "https://github.com/koushil-mankali/zomato_clone",
-      type: "frontend"
+      type: ["frontend"]
     },
     {
       img: ucloneImg,
-      link: "/project/zomato-clone",
+      link: "/project/uclone",
       ttl: "Uclone(Udemy Clone)",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
-      video: "",
-      live: "",
-      git: "",
-      type: "backend"
+      desc: "Uclone its a Udemy replica which have almost all features like udemy.",
+      stack: "PHP, MySQL, HTML, CSS, JavaScript",
+      video: "https://youtu.be/fE0tml6ryrI",
+      live: "https://uclone.koushilmankali.com/",
+      git: "https://github.com/koushil-mankali/uclone",
+      type: ["frontend", "backend"]
     },
     {
       img: covidHDImg,
-      link: "/project/zomato-clone",
+      link: "/project/covid-help-disk",
       ttl: "Covid Help Disk",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
+      desc: "In this covid situation people are facing a lots of problems because of unavailability of beds, oxygen and medicines but actually we have enough stock of them just we need to use them effeciently so I have made a project which will help public (users) to know in which hospital beds, oxygen , medicine is available so that they can directly visit.",
+      stack: "React Js, NodeJS, Express, MongoDB, HTML, CSS, JavaScript",
       video: "",
-      live: "",
-      git: "",
-      type: "mern"
+      live: "https://covidhd.koushilmankali.com/",
+      git: "https://github.com/koushil-mankali/covid-help-disk-frontend",
+      type: ["frontend", "backend", "mern"]
     },
      {
       img: netflixImg,
-      link: "/project/zomato-clone",
+      link: "/project/netflix-clone",
       ttl: "Netflix Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
+      desc: "It is a clone of netflix frontend using reactjs.",
+      stack: "React JS, HTML, CSS, JavaScript",
       video: "",
-      live: "",
-      git: "",
-      type: "mern"
+      live: "https://netflix-clone.koushilmankali.com/",
+      git: "https://github.com/koushil-mankali/netflix-clone",
+      type: ["frontend"]
     },
      {
       img: instaCloneImg,
-      link: "/project/zomato-clone",
+      link: "/project/instagram-clone",
       ttl: "Instagram Clone",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
+      desc: "Instagram Clone using React Js and Firebase",
+      stack: "React JS, Firebase HTML, CSS, JavaScript",
       video: "",
-      live: "",
-      git: "",
-      type: "mern"
+      live: "https://instagram-clone.koushilmankali.com/",
+      git: "https://github.com/koushil-mankali/instagram_clone",
+      type: ["frontend"]
     },
      {
       img: BlogCMSImg,
-      link: "/project/zomato-clone",
+      link: "/project/blog-cms",
       ttl: "Content Management System",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
-      stack: "HTML, CSS, Bootstrap, JavaScript, NodeJS, Express, MongoDB",
+      desc: "It is a Content Management System here admin can manage blog content and perform operations such as publish or update or delete articles. Articles are divided based on categories and admin can create/delete categories. Category count will be updated automatically when user publish/update/delete articles. Admin can add more admins or moderators.",
+      stack: "PHP, MySQL, HTML, CSS, JavaScript",
       video: "",
-      live: "",
-      git: "",
-      type: "mern"
+      live: "https://blogcms.koushilmankali.com/",
+      git: "https://github.com/koushil-mankali/blog-content-management-system",
+      type: ["frontend", "backend"]
     },
      {
       img: EshopImg,
-      link: "/project/zomato-clone",
+      link: "/project/shopping-site-frontend",
       ttl: "Shopping Site Frontend",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
+      desc: "It's and one page online shopping site only front end.",
       stack: "HTML, CSS, JavaScript",
       video: "",
       live: "",
-      git: "",
-      type: "hcj"
+      git: "https://github.com/koushil-mankali/shopping-site-frontend",
+      type: ["frontend", "hcj"]
     },
      {
       img: mkHTLImg,
       link: "/project/zomato-clone",
       ttl: "Hotel Site Forntend",
-      desc: "This website is a clone of “Lybrate.com” with backend integration, which is an e-commerce store & here I implemented some functionalities like real time search with debounce, product filters, add to cart etc.",
+      desc: "Ecommerce shopping site frontend with html, css and javascript.",
       stack: "HTML, CSS, JavaScript",
       video: "",
       live: "",
-      git: "",
-      type: "hcj"
+      git: "https://github.com/koushil-mankali/eshop",
+      type: ["frontend", "hcj"]
     },
   ];
 
@@ -122,25 +122,25 @@ const ProjectsComponent = () => {
     })
   } else if (active.frontend){
     cardData = data?.filter((item) => {
-      if(item.type === "frontend"){
+      if(item.type.includes("frontend")){
         return item;
       }
     })
   } else if (active.backend){
     cardData = data?.filter((item) => {
-      if(item.type === "backend"){
+      if(item.type.includes("backend")){
         return item;
       }
     })
   } else if (active.mern){
     cardData = data?.filter((item) => {
-      if(item.type === "mern"){
+      if(item.type.includes("mern")){
         return item;
       }
     })
   } else if (active.hcj){
     cardData = data?.filter((item) => {
-      if(item.type === "hcj"){
+      if(item.type.includes("hcj")){
         return item;
       }
     })
