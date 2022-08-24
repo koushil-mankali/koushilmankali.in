@@ -4,7 +4,7 @@ import css from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <div className={css.footer}>
+    <div className={css.footer} id='footer'>
       <div>
         <span className={css.txt1}>Made with ❤️ in India by</span>
         <a
