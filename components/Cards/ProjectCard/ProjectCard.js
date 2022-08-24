@@ -26,7 +26,7 @@ const ProjectCard = ({ item = {} }) => {
         </div>
         <div className={css.bdy}>
           <div className={css.ttl}>{item.ttl}</div>
-          <div className={css.desc}>{item.desc?.slice(0, 150)}...</div>
+          <div className={css.desc}>{item.desc?.slice(0, 120)}...</div>
           <div className={css.stack}>
             <span className={css.rtxt}>Tech Stack:</span>
             <span className={css.wtxt}>{item.stack}</span>

@@ -40,6 +40,12 @@
         width: 90%;
         padding: 1rem;
     }
+
+    .bdy{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 @media all and (max-width: 740px){
@@ -52,9 +58,4 @@
         font-size: 2rem;
     }
 
-    .bdy{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
 }

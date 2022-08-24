@@ -2,21 +2,15 @@ import React from 'react'
 
 import css from './RightSecComponent.module.css'
 
+import LeftDetailComponent from './components/LeftDetailComponent';
+import RightDetailComponent from './components/RightDetailComp';
+
 const RightSecComponent = () => {
   return (
     <div className={css.outerDiv}>
-        <div className={css.imgBox}>
-        </div>
-        <div className={css.about}>
-            Hi, My self Koushil Mankali I enjoy creating websites and making them
-            live on the internet. I have started learning web developement in my 3rd
-            year of Under Graduation. But actually i have started creating websites
-            when i was in my 11th standard on wordpress platform. It was fun to
-            create websites and host them online but also i was a computer
-            enthusiastic which driven me to create computer and tech related
-            websites. So my websites creation or development journey started way
-            long.
-        </div>
+      <LeftDetailComponent ttl="ITalent Digital" txt="Working as a Frontend Developer" dur="2022 Apr - Present" />
+      <RightDetailComponent ttl="Amoghnya Tech Sol." txt="Worked as a MERN Stack Developer " dur="2021 July - 2022 Mar" />
+      <LeftDetailComponent ttl="B.Tech in CSE" txt="B.Tech in Computer Science and Engineering" dur="2017 - 2021" />
     </div>
   );
 }

@@ -10,7 +10,7 @@ const LeftSecComponent = () => {
   return (
     <div className={css.outerDiv}>
         <div className={css.imgBox}>
-            {/* <Image alt="computer enginner image" src={koushilImage} className={css.img} width="400px" height="400px" /> */}
+            <Image alt="computer enginner image" src={koushilImage} className={css.img} width="400px" height="400px" />
         </div>
         <div className={css.about}>
             Hi, My self Koushil Mankali I enjoy creating websites and making them

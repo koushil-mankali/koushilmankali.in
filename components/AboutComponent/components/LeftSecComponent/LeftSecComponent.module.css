@@ -17,9 +17,9 @@
 }
 
 .about{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
     text-align: justify;
-    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'League Spartan', sans-serif;
     color: var(--white-alpha-color);
 }

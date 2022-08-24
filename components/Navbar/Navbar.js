@@ -28,19 +28,21 @@ const Navbar = () => {
       const divs = [heroDiv, aboutDiv, workDiv, skillsDiv, contactDiv];
 
       const changeNavTab = (entries) => {
-        if(init === 0){
+        if (init === 0) {
           init = 1;
           return;
         }
         entries.forEach((entry) => {
-          if(entry.isIntersecting){
+          if (entry.isIntersecting) {
             const divs = document.getElementsByClassName(css.menuLinkTxt);
 
-            for(let i =0; i<= divs.length; i++){
+            for (let i = 0; i <= divs.length; i++) {
               divs[i]?.classList?.remove(css.activeMenuLinkTxt);
             }
 
-            document.getElementById(entry.target.id + "Link")?.classList?.add(css.activeMenuLinkTxt);
+            document
+              .getElementById(entry.target.id + "Link")
+              ?.classList?.add(css.activeMenuLinkTxt);
           }
         });
       };
@@ -53,14 +55,13 @@ const Navbar = () => {
 
       const observer = new IntersectionObserver(changeNavTab, options);
 
-      divs.forEach(ele => {
+      divs.forEach((ele) => {
         observer.observe(ele);
-      })
+      });
     }
   };
 
   changeNavTabsAsPerIntersection();
-
 
   return (
     <div className={css.outerDiv}>
@@ -93,7 +94,7 @@ const Navbar = () => {
       >
         <Link href="/#home">
           <div
-          id='heroLink'
+            id="heroLink"
             className={
               router.asPath === "/#home" || router.asPath === "/"
                 ? [css.menuLinkTxt, css.activeMenuLinkTxt].join(" ")
@@ -122,7 +123,7 @@ const Navbar = () => {
         </a>
         <Link href="/#about">
           <div
-          id='aboutLink'
+            id="aboutLink"
             className={
               router.asPath === "/#about"
                 ? [css.menuLinkTxt, css.activeMenuLinkTxt].join(" ")
@@ -135,7 +136,7 @@ const Navbar = () => {
         </Link>
         <Link href="/#work">
           <div
-          id='workLink'
+            id="workLink"
             className={
               router.asPath === "/#work"
                 ? [css.menuLinkTxt, css.activeMenuLinkTxt].join(" ")
@@ -148,7 +149,7 @@ const Navbar = () => {
         </Link>
         <Link href="/#skills">
           <div
-          id='skillsLink'
+            id="skillsLink"
             className={
               router.asPath === "/#skills"
                 ? [css.menuLinkTxt, css.activeMenuLinkTxt].join(" ")
@@ -161,7 +162,7 @@ const Navbar = () => {
         </Link>
         <Link href="/#contact">
           <div
-          id='contactLink'
+            id="contactLink"
             className={
               router.asPath === "/#contact"
                 ? [css.menuLinkTxt, css.activeMenuLinkTxt].join(" ")

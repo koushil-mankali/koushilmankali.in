@@ -17,6 +17,7 @@
     text-align: center;
     font-size: 3rem;
     font-weight: 500;
+    margin-bottom: 2rem;
     color: var(--white-alpha-color); 
     cursor: context-menu;
 }
