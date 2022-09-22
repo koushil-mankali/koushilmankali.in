@@ -51,11 +51,11 @@ let Post = (props) => {
           />
         </div>
         <div className={postCss.btnLinks}>
-          <a href={gitHub} className={postCss.btnLink} target="_blank">
+          <a href={gitHub} className={postCss.btnLink} target="_blank" rel="noreferrer">
             View The Source Code
           </a>
 
-          <a href={liveSite} className={postCss.btnLink} target="_blank">
+          <a href={liveSite} className={postCss.btnLink} target="_blank" rel="noreferrer">
             View The Live Demo
           </a>
         </div>

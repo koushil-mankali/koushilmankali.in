@@ -19,8 +19,8 @@ const ProjectCard = ({ item = {} }) => {
   };
 
   return (
-    <Link href={item?.link || "/"} target="_blank">
-      <a target="_blank" className={css.anchor}>
+    <Link href={item?.link || "/"}>
+      <a target="_blank" rel="noreferrer" className={css.anchor}>
         <div className={css.outerDiv}>
           <div className={css.imgBox}>
             <Image src={item.img} alt="project image" className={css.img} />
