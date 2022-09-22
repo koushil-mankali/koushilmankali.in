@@ -108,18 +108,18 @@ const ProjectsComponent = () => {
       desc: "It's and one page online shopping site only front end.",
       stack: "HTML, CSS, JavaScript",
       video: "",
-      live: "",
+      live: "https://koushil-mankali.github.io/single-page-hotel-site-front-end",
       git: "https://github.com/koushil-mankali/shopping-site-frontend",
       type: ["frontend", "hcj"]
     },
      {
       img: mkHTLImg,
-      link: "/posts/zomato-clone",
+      link: "/posts/hotel-site",
       ttl: "Hotel Site Forntend",
       desc: "Ecommerce shopping site frontend with html, css and javascript.",
       stack: "HTML, CSS, JavaScript",
       video: "",
-      live: "",
+      live: "https://koushil-mankali.github.io/eshop",
       git: "https://github.com/koushil-mankali/eshop",
       type: ["frontend", "hcj"]
     },

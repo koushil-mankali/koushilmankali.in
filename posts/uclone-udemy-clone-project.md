@@ -2,7 +2,7 @@
 url: "uclone-udemy-clone-project"
 title: "Udemy Clone"
 date: "21-06-2021"
-number: 4
+number: 3
 image: "uclone.png"
 gitHub: "https://github.com/koushil-mankali/uclone"
 liveSite: "https://uclone.koushilmankali.com/"

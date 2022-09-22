@@ -2,7 +2,7 @@
 url: "content-management-system"
 title: "Content Management System (CMS)"
 date: "21-06-2021"
-number: 5
+number: 7
 image: "blogcms.png"
 gitHub: "https://github.com/koushil-mankali/blog-content-management-system"
 liveSite: "https://blogcms.koushilmankali.com/"

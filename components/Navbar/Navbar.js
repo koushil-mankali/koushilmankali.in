@@ -56,7 +56,9 @@ const Navbar = () => {
       const observer = new IntersectionObserver(changeNavTab, options);
 
       divs.forEach((ele) => {
-        observer.observe(ele);
+        if(ele){
+          observer?.observe(ele);
+        }
       });
     }
   };

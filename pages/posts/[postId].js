@@ -4,7 +4,9 @@ import Image from "next/image";
 import { getPostData, getPostsFiles } from "../../lib/post-util";
 
 import ReactMarkdown from "react-markdown";
+import remarkGfm from 'remark-gfm'
 
+import Navbar from '../../components/Navbar/Navbar';
 import postCss from "./Post.module.css";
 
 let Post = (props) => {
@@ -27,15 +29,18 @@ let Post = (props) => {
     <>
       <Head>
         <title>{title}</title>
-        {/* <link rel="icon" type="image/ico" href="/Images/favicons/favicon.ico" /> */}
+        <link rel="icon" href="/koushil.jpg" />
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1.0"
         ></meta>
         <meta name="description" content={discreption} />
         <meta name="keywords" content={keywords} />
+        <meta name="language" content="eng" />
+        <meta name="next-head-count" content="18" />
       </Head>
-      <div className={postCss.post}>
+      <Navbar />
+      <div className={postCss.post} >
         <div className={postCss.imgTag}>
           <Image
             className={postCss.imageTag}
@@ -46,17 +51,17 @@ let Post = (props) => {
           />
         </div>
         <div className={postCss.btnLinks}>
-          <a href={gitHub} className={postCss.btnLink}>
+          <a href={gitHub} className={postCss.btnLink} target="_blank">
             View The Source Code
           </a>
 
-          <a href={liveSite} className={postCss.btnLink}>
+          <a href={liveSite} className={postCss.btnLink} target="_blank">
             View The Live Demo
           </a>
         </div>
         <article className={postCss.postBdy}>
           <ReactMarkdown>{`# ${title}`}</ReactMarkdown>
-          <ReactMarkdown skipHtml={true}>{content}</ReactMarkdown>
+          <ReactMarkdown skipHtml={false} remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
         </article>
       </div>
     </>

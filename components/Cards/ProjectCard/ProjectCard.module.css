@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+.anchor{
+    color:inherit;
+}
+
 .imgBox{
     max-height: 150px;
     border-radius: 5px;
