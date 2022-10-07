@@ -42,7 +42,7 @@ const ProjectsComponent = () => {
       desc: "text to speech app.",
       stack: "Vue Js",
       video: "/",
-      live: "https://www.text-to-speech-vuejs-app.vercel.app",
+      live: "https://text-to-speech-vuejs-app.vercel.app",
       git: "https://github.com/koushil-mankali/Text-to-speech-vuejs-app",
       type: ["frontend"]
     },
