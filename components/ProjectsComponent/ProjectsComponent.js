@@ -37,6 +37,17 @@ const ProjectsComponent = () => {
     },
     {
       img: zomatoCImg,
+      link: "/posts/text-to-speech-app",
+      ttl: "Text To Speech App",
+      desc: "text to speech app.",
+      stack: "Vue Js",
+      video: "/",
+      live: "https://text-to-speech-vuejs-app.vercel.app",
+      git: "https://github.com/koushil-mankali/Text-to-speech-vuejs-app",
+      type: ["frontend"]
+    },
+    {
+      img: zomatoCImg,
       link: "/posts/zomato-clone",
       ttl: "Zomato Clone",
       desc: "Zomato Clone - Food Delivery Application Clone using React JS. In this Zomato App clone I have cloned maximum pages Home page, User Profile page, Food Selection page, Settings page etc... As it is only frontend clone I have added static data but in a dynamic way so data can be changed easily or added easily.",
