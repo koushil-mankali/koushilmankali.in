@@ -6,6 +6,7 @@ number: 8
 image: "Eshop.png"
 gitHub: "https://koushil-mankali.github.io/eshop/"
 liveSite: "https://koushil-mankali.github.io/eshop"
+slug: "posts/shopping-site-frontend"
 discreption: "Ecommerce shopping site frontend with html, css and javascript"
 keywords: "shopping site frontend, html, css, javascript, koushil, koushil mankali"
 ---

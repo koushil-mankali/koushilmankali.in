@@ -5,7 +5,8 @@ date: "21-06-2021"
 number: 3
 image: "uclone.png"
 gitHub: "https://github.com/koushil-mankali/uclone"
-liveSite: "https://uclone.koushilmankali.com/"
+liveSite: "https://uclone.koushilmankali.in/"
+slug: "posts/uclone-udemy-clone-project"
 discreption: "uclone udemy clone project using PHP and MySQL"
 keywords: "uclone, udemy clone, udemy clone using php and mysql, learning management system project, learning management system project,php project, udemy project, php project with source code, koushil, koushil mankali"
 ---

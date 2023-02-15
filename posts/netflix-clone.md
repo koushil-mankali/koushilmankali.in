@@ -5,7 +5,8 @@ date: "21-06-2021"
 number: 5
 image: "Netflix-clone.png"
 gitHub: "https://github.com/koushil-mankali/netflix-clone"
-liveSite: "https://netflix-clone.koushilmankali.com/"
+liveSite: "https://netflix-clone.koushilmankali.in/"
+slug: "posts/netflix-clone"
 discreption: "Netflix Home page clone using react js."
 keywords: "netflix clone, reactjs, react, netflix frontend clone, koushil, koushil mankali"
 ---

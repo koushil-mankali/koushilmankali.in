@@ -4,8 +4,9 @@ title: "Covid Help Disk"
 date: "21-06-2021"
 number: 4
 image: "covidhd.png"
+slug: "posts/covid-help-disk"
 gitHub: "https://github.com/koushil-mankali/covid-help-disk-nodejs"
-liveSite: "https://covidhd.koushilmankali.com/"
+liveSite: "https://covidhd.koushilmankali.in/"
 discreption: "Covid Help Disk (CHD) is a coivd 19 help disk form people to search for hospitals near by them for beds avalibility oxygen avalibility and medicines avalibility which will help people not to waste time in searching for beds in covid emergency."
 keywords: "covid, covid 19, covid 19 project, covid project, mern project, mern project on covid, mern project on covid 19, react js project on covid 19, mern project with source code, koushil, koushil mankali"
 ---

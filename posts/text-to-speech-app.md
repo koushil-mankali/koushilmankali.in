@@ -3,9 +3,10 @@ url: "text-to-speech-app"
 title: "Text To Speech App"
 date: "07-09-2022"
 number: 8
-image: "blogcms.png"
+image: "TextToSpeech.png"
 gitHub: "https://github.com/koushil-mankali/Text-to-speech-vuejs-app"
-liveSite: "https://text-to-speech-vuejs-app.koushilmankali.com"
+liveSite: "https://text-to-speech-vuejs-app.koushilmankali.in"
+slug: "posts/text-to-speech-app"
 discreption: "Text To Speech App project using PHP and MySQL"
 keywords: "CMS, content management system, php project, cms project, php project with source code, koushil, koushil mankali"
 ---
@@ -44,7 +45,7 @@ Instead of building your own system for creating web pages, storing images, and 
 
 #### Home Page
 
-![home page](/Images/postImages/blogcms/home.png)
+![home page](/Images/postImages/TextToSpeechApp/TextToSpeech.png)
 
 #### Article Page
 

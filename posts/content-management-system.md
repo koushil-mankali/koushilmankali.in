@@ -4,8 +4,9 @@ title: "Content Management System (CMS)"
 date: "21-06-2021"
 number: 7
 image: "blogcms.png"
+slug: "posts/content-management-system"
 gitHub: "https://github.com/koushil-mankali/blog-content-management-system"
-liveSite: "https://blogcms.koushilmankali.com/"
+liveSite: "https://blogcms.koushilmankali.in/"
 discreption: "Content Management System (CMS) project using PHP and MySQL"
 keywords: "CMS, content management system, php project, cms project, php project with source code, koushil, koushil mankali"
 ---
