@@ -1,7 +1,7 @@
 ---
 url: "zomato-clone"
 title: "Zomato Frontend Clone"
-date: "22-09-2022"
+date: "2022-09-21T18:30:00.000Z"
 number: 2
 image: "zomato-clone.png"
 gitHub: "https://github.com/koushil-mankali/zomato_clone"

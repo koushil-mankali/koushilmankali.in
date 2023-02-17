@@ -1,7 +1,7 @@
 ---
 url: "content-management-system"
 title: "Content Management System (CMS)"
-date: "21-06-2021"
+date: "2022-09-21T18:30:00.000Z"
 number: 7
 image: "blogcms.png"
 slug: "posts/content-management-system"

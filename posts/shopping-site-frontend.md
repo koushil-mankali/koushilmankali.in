@@ -1,7 +1,7 @@
 ---
 url: "shopping-site-frontend"
 title: "Ecommerce Shopping Site"
-date: "21-06-2021"
+date: "2022-09-21T18:30:00.000Z"
 number: 8
 image: "Eshop.png"
 gitHub: "https://koushil-mankali.github.io/eshop/"

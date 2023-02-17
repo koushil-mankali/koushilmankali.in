@@ -1,7 +1,7 @@
 ---
 url: "koushil-mankali-portfolio"
 title: "My Portfolio Site"
-date: "09-07-2021"
+date: "2022-09-21T18:30:00.000Z"
 number: 1
 image: "portfolio.png"
 gitHub: "/"

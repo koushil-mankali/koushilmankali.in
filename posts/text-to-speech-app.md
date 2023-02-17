@@ -1,7 +1,7 @@
 ---
 url: "text-to-speech-app"
 title: "Text To Speech App"
-date: "07-09-2022"
+date: "2022-09-21T18:30:00.000Z"
 number: 8
 image: "TextToSpeech.png"
 gitHub: "https://github.com/koushil-mankali/Text-to-speech-vuejs-app"

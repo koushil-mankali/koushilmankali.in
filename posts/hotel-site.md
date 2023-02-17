@@ -1,7 +1,7 @@
 ---
 url: "hotel-site"
 title: "Hotel Site"
-date: "21-06-2021"
+date: "2022-09-21T18:30:00.000Z"
 number: 9
 image: "hotel-site.png"
 slug: "posts/hotel-site"

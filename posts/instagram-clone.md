@@ -1,7 +1,7 @@
 ---
 url: "instagram-clone"
 title: "Instagram Clone"
-date: "21-06-2021"
+date: "2022-09-21T18:30:00.000Z"
 number: 6
 image: "instagram-clone.png"
 gitHub: "https://github.com/koushil-mankali/instagram_clone"
