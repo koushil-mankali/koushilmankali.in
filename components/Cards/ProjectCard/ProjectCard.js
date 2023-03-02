@@ -45,7 +45,12 @@ const ProjectCard = ({ item = {} }) => {
               >
                 <Image src={githubIcon} alt="icon" width="30px" height="30px" />
               </div>
-              <a className={css.icon} target="_blank" href={item?.live}>
+              <a
+                className={css.icon}
+                target="_blank"
+                rel="noreferrer"
+                href={item?.live}
+              >
                 <Image src={eyeIcon} alt="icon" width="30px" height="30px" />
               </a>
             </div>
