@@ -2,14 +2,16 @@ import { useState } from "react";
 
 import css from "./ProjectsComponent.module.css";
 
-import BlogCMSImg from '../../public/Images/projects/BlogCMS.png'
-import covidHDImg from '../../public/Images/projects/Covid-Help-Disk.png'
-import EshopImg from '../../public/Images/projects/Eshop.png'
-import instaCloneImg from '../../public/Images/projects/instagram-clone.png'
-import mkHTLImg from '../../public/Images/projects/MK-Hotels.png'
-import netflixImg from '../../public/Images/projects/Netflix-Clone.png'
-import ucloneImg from '../../public/Images/projects/udemy-clone.png'
-import zomatoCImg from '../../public/Images/projects/zomato-clone.png'
+import BlogCMSImg from "../../public/Images/projects/BlogCMS.png";
+import covidHDImg from "../../public/Images/projects/Covid-Help-Disk.png";
+import EshopImg from "../../public/Images/projects/Eshop.png";
+import instaCloneImg from "../../public/Images/projects/instagram-clone.png";
+import mkHTLImg from "../../public/Images/projects/MK-Hotels.png";
+import netflixImg from "../../public/Images/projects/Netflix-Clone.png";
+import ucloneImg from "../../public/Images/projects/udemy-clone.png";
+import zomatoCImg from "../../public/Images/projects/zomato-clone.png";
+import portfolioImg from "../../public/Images/projects/portfolio.png";
+import texttospeechappImg from "../../public/Images/projects/texttospeechapp.png";
 
 import GreyBtn from "../Button/GreyBtn/Button";
 import ProjectCard from "../Cards/ProjectCard/ProjectCard";
@@ -25,26 +27,26 @@ const ProjectsComponent = () => {
 
   const data = [
     {
-      img: zomatoCImg,
+      img: portfolioImg,
       link: "/posts/koushil-mankali-portfolio",
       ttl: "My Portfolio",
       desc: "My Portfolio.",
       stack: "React Js, Next Js, HTML, CSS, JavaScript",
       video: "/",
-      live: "https://koushilmankali.com/",
-      git: "https://github.com/koushil-mankali/koushilmankali.com",
-      type: ["frontend", "backend", "mern"]
+      live: "https://koushilmankali.in/",
+      git: "https://github.com/koushil-mankali/koushilmankali.in",
+      type: ["frontend", "backend", "mern"],
     },
     {
-      img: zomatoCImg,
+      img: texttospeechappImg,
       link: "/posts/text-to-speech-app",
       ttl: "Text To Speech App",
       desc: "text to speech app.",
       stack: "Vue Js",
       video: "/",
-      live: "text-to-speech-vuejs-app.vercel.app",
+      live: "https://text-to-speech-app.koushilmankali.in/",
       git: "https://github.com/koushil-mankali/Text-to-speech-vuejs-app",
-      type: ["frontend"]
+      type: ["frontend"],
     },
     {
       img: zomatoCImg,
@@ -52,10 +54,11 @@ const ProjectsComponent = () => {
       ttl: "Zomato Clone",
       desc: "Zomato Clone - Food Delivery Application Clone using React JS. In this Zomato App clone I have cloned maximum pages Home page, User Profile page, Food Selection page, Settings page etc... As it is only frontend clone I have added static data but in a dynamic way so data can be changed easily or added easily.",
       stack: "React Js, HTML, CSS, JavaScript",
-      video: "https://www.youtube.com/watch?v=lNfS_8bJA5c&ab_channel=KoushilMankali",
-      live: "https://zomatoclone.koushilmankali.com/",
+      video:
+        "https://www.youtube.com/watch?v=lNfS_8bJA5c&ab_channel=KoushilMankali",
+      live: "https://zomatoclone.koushilmankali.in/",
       git: "https://github.com/koushil-mankali/zomato_clone",
-      type: ["frontend"]
+      type: ["frontend"],
     },
     {
       img: ucloneImg,
@@ -64,9 +67,9 @@ const ProjectsComponent = () => {
       desc: "Uclone its a Udemy replica which have almost all features like udemy.",
       stack: "PHP, MySQL, HTML, CSS, JavaScript",
       video: "https://youtu.be/fE0tml6ryrI",
-      live: "https://uclone.koushilmankali.com/",
+      live: "https://uclone.koushilmankali.in/",
       git: "https://github.com/koushil-mankali/uclone",
-      type: ["frontend", "backend"]
+      type: ["frontend", "backend"],
     },
     {
       img: covidHDImg,
@@ -75,44 +78,44 @@ const ProjectsComponent = () => {
       desc: "In this covid situation people are facing a lots of problems because of unavailability of beds, oxygen and medicines but actually we have enough stock of them just we need to use them effeciently so I have made a project which will help public (users) to know in which hospital beds, oxygen , medicine is available so that they can directly visit.",
       stack: "React Js, NodeJS, Express, MongoDB, HTML, CSS, JavaScript",
       video: "",
-      live: "https://covidhd.koushilmankali.com/",
+      live: "https://covidhd.koushilmankali.in/",
       git: "https://github.com/koushil-mankali/covid-help-disk-frontend",
-      type: ["frontend", "backend", "mern"]
+      type: ["frontend", "backend", "mern"],
     },
-     {
+    {
       img: netflixImg,
       link: "/posts/netflix-clone",
       ttl: "Netflix Clone",
       desc: "It is a clone of netflix frontend using reactjs.",
       stack: "React JS, HTML, CSS, JavaScript",
       video: "",
-      live: "https://netflix-clone.koushilmankali.com/",
+      live: "https://netflix-clone.koushilmankali.in/",
       git: "https://github.com/koushil-mankali/netflix-clone",
-      type: ["frontend"]
+      type: ["frontend"],
     },
-     {
+    {
       img: instaCloneImg,
       link: "/posts/instagram-clone",
       ttl: "Instagram Clone",
       desc: "Instagram Clone using React Js and Firebase",
       stack: "React JS, Firebase HTML, CSS, JavaScript",
       video: "",
-      live: "https://instagram-clone.koushilmankali.com/",
+      live: "https://instagram-clone.koushilmankali.in/",
       git: "https://github.com/koushil-mankali/instagram_clone",
-      type: ["frontend"]
+      type: ["frontend"],
     },
-     {
+    {
       img: BlogCMSImg,
       link: "/posts/content-management-system",
       ttl: "Content Management System",
       desc: "It is a Content Management System here admin can manage blog content and perform operations such as publish or update or delete articles. Articles are divided based on categories and admin can create/delete categories. Category count will be updated automatically when user publish/update/delete articles. Admin can add more admins or moderators.",
       stack: "PHP, MySQL, HTML, CSS, JavaScript",
       video: "",
-      live: "https://blogcms.koushilmankali.com/",
+      live: "https://blogcms.koushilmankali.in/",
       git: "https://github.com/koushil-mankali/blog-content-management-system",
-      type: ["frontend", "backend"]
+      type: ["frontend", "backend"],
     },
-     {
+    {
       img: EshopImg,
       link: "/posts/shopping-site-frontend",
       ttl: "Shopping Site Frontend",
@@ -121,9 +124,9 @@ const ProjectsComponent = () => {
       video: "",
       live: "https://koushil-mankali.github.io/single-page-hotel-site-front-end",
       git: "https://github.com/koushil-mankali/shopping-site-frontend",
-      type: ["frontend", "hcj"]
+      type: ["frontend", "hcj"],
     },
-     {
+    {
       img: mkHTLImg,
       link: "/posts/hotel-site",
       ttl: "Hotel Site Forntend",
@@ -132,41 +135,41 @@ const ProjectsComponent = () => {
       video: "",
       live: "https://koushil-mankali.github.io/eshop",
       git: "https://github.com/koushil-mankali/eshop",
-      type: ["frontend", "hcj"]
+      type: ["frontend", "hcj"],
     },
   ];
 
   let cardData = "";
-  
-  if(active.all){
+
+  if (active.all) {
     cardData = data?.filter((item) => {
       return item;
-    })
-  } else if (active.frontend){
+    });
+  } else if (active.frontend) {
     cardData = data?.filter((item) => {
-      if(item.type.includes("frontend")){
+      if (item.type.includes("frontend")) {
         return item;
       }
-    })
-  } else if (active.backend){
+    });
+  } else if (active.backend) {
     cardData = data?.filter((item) => {
-      if(item.type.includes("backend")){
+      if (item.type.includes("backend")) {
         return item;
       }
-    })
-  } else if (active.mern){
+    });
+  } else if (active.mern) {
     cardData = data?.filter((item) => {
-      if(item.type.includes("mern")){
+      if (item.type.includes("mern")) {
         return item;
       }
-    })
-  } else if (active.hcj){
+    });
+  } else if (active.hcj) {
     cardData = data?.filter((item) => {
-      if(item.type.includes("hcj")){
+      if (item.type.includes("hcj")) {
         return item;
       }
-    })
-  } 
+    });
+  }
 
   const handleBtn = (key) => {
     setActive((val) => {
@@ -175,7 +178,7 @@ const ProjectsComponent = () => {
   };
 
   return (
-    <div className={css.outerDiv} id='work'>
+    <div className={css.outerDiv} id="work">
       <div className={css.innerDiv}>
         <div className={css.ttl}>
           All The <span className={css.ttlS}>Projects</span> I Have Done

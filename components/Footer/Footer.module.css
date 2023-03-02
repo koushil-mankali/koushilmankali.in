@@ -1,36 +1,67 @@
-.footer{
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom:0;
-    font-size: 1.2rem;
-    background-color: orange;
+.footer {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  font-size: 1.2rem;
+  background-color: orange;
 }
 
-.txt1{
-    font-weight: 500;
-    color: var(--crimson-color);
+.txt1 {
+  font-weight: 500;
+  color: var(--crimson-color);
 }
 
-.txt2{
-    margin-left: 0.5rem;
-    font-weight: 500;
-    color: #eee;
-    cursor: pointer;
-    text-decoration: none;
+.txt2 {
+  margin-left: 0.5rem;
+  font-weight: 500;
+  color: #eee;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-@media all and (max-width: 780px){
-    .footer{
-        font-size: 1rem;
-    }
+.footerBar {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-@media all and (max-width: 480px){
-    .footer{
-        font-size: 0.8rem;
-    }
+.btn {
+  color: crimson;
+  background-color: #eee;
+  border: 1px solid goldenrod;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.upArrowBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background-color: #eee;
+  border: 1px solid goldenrod;
+  cursor: pointer;
+}
+
+@media all and (max-width: 780px) {
+  .footer {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .footer {
+    font-size: 0.8rem;
+  }
 }

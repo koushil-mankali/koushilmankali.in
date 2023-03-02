@@ -5,7 +5,7 @@ date: "2022-09-21T18:30:00.000Z"
 number: 8
 image: "TextToSpeech.png"
 gitHub: "https://github.com/koushil-mankali/Text-to-speech-vuejs-app"
-liveSite: "https://text-to-speech-vuejs-app.koushilmankali.in"
+liveSite: "https://text-to-speech-app.koushilmankali.in/"
 slug: "posts/text-to-speech-app"
 discreption: "Text To Speech App project using PHP and MySQL"
 keywords: "CMS, content management system, php project, cms project, php project with source code, koushil, koushil mankali"
