@@ -3,7 +3,7 @@ url: "text-to-speech-app"
 title: "Text To Speech App"
 date: "2022-09-21T18:30:00.000Z"
 number: 8
-image: "TextToSpeech.png"
+image: "textToSpeech.png"
 gitHub: "https://github.com/koushil-mankali/Text-to-speech-vuejs-app"
 liveSite: "https://text-to-speech-app.koushilmankali.in/"
 slug: "posts/text-to-speech-app"
@@ -21,7 +21,7 @@ I have used JavaScript core Web Speech API.
 
 #### Home Page
 
-![home page](/Images/postImages/TextToSpeech.png)
+![home page](/Images/postImages/TextToSpeech/textToSpeech.png)
 
 \***\* Important Note\*\***
 
