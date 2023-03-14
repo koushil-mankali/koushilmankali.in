@@ -1,28 +1,29 @@
-import React from "react";
-
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as Yup from 'yup';
+import * as Yup from "yup";
 
 import AlertComponent from "../AlertComponent/AlertComponent";
 import css from "./ContactComponent.module.css";
 
 const ContactComponent = () => {
+  const initialValues = {
+    username: "",
+    email: "",
+    message: "",
+  };
 
-    const initialValues = {
-        username: "",
-        email:"",
-        message:"",
-    }
+  const validationSchema = Yup.object({
+    username: Yup.string()
+      .min(3, "Minimum 3 charecters required!")
+      .required("Required!"),
+    email: Yup.string().email("Email is required!").required("Required!"),
+    message: Yup.string()
+      .min(5, "Minimum 5 charecters required!")
+      .required("Required!"),
+  });
 
-    const validationSchema = Yup.object({
-        username: Yup.string().min(3, "Minimum 3 charecters required!").required("Required!"),
-        email: Yup.string().email("Email is required!").required("Required!"),
-        message: Yup.string().min(5, "Minimum 5 charecters required!").required("Required!")
-    });
-
-    const submitForm = (values) => {
-        console.log(values, 'values')
-    }
+  const submitForm = (values) => {
+    console.log(values, "values");
+  };
 
   return (
     <div className={css.outerDiv} id="contact">
@@ -32,37 +33,52 @@ const ContactComponent = () => {
         </div>
         <div className={css.bdy}>
           <div className={css.mailBox}>
-          <AlertComponent />
+            <AlertComponent />
             <Formik
               initialValues={initialValues}
               validationSchema={validationSchema}
               onSubmit={submitForm}
             >
-                {
-                    (formik) => {
-                        return <Form>
-                            <div className={css.field}>
-                                <Field name="username" type="text" placeholder="Name" className={css.inpField}/>
-                                <ErrorMessage name="username">
-                                    {msg => <div className={css.errorMessage}>{msg}</div>}
-                                </ErrorMessage>
-                            </div>
-                            <div className={css.field}>
-                                <Field name="email" type="email" placeholder="Email" className={css.inpField}/>
-                                <ErrorMessage name="email">
-                                    {msg => <div className={css.errorMessage}>{msg}</div>}
-                                </ErrorMessage>
-                            </div>
-                            <div className={css.field}>
-                                <Field name="message" as="textarea" placeholder="Message" className={css.inpFieldT}/>
-                                <ErrorMessage name="message">
-                                    {msg => <div className={css.errorMessage}>{msg}</div>}
-                                </ErrorMessage>
-                            </div>
-                            <button className={css.sendBtn}>Send Message</button>
-                        </Form>
-                    }
-                }
+              {(formik) => {
+                return (
+                  <Form>
+                    <div className={css.field}>
+                      <Field
+                        name="username"
+                        type="text"
+                        placeholder="Name"
+                        className={css.inpField}
+                      />
+                      <ErrorMessage name="username">
+                        {(msg) => <div className={css.errorMessage}>{msg}</div>}
+                      </ErrorMessage>
+                    </div>
+                    <div className={css.field}>
+                      <Field
+                        name="email"
+                        type="email"
+                        placeholder="Email"
+                        className={css.inpField}
+                      />
+                      <ErrorMessage name="email">
+                        {(msg) => <div className={css.errorMessage}>{msg}</div>}
+                      </ErrorMessage>
+                    </div>
+                    <div className={css.field}>
+                      <Field
+                        name="message"
+                        as="textarea"
+                        placeholder="Message"
+                        className={css.inpFieldT}
+                      />
+                      <ErrorMessage name="message">
+                        {(msg) => <div className={css.errorMessage}>{msg}</div>}
+                      </ErrorMessage>
+                    </div>
+                    <button className={css.sendBtn}>Send Message</button>
+                  </Form>
+                );
+              }}
             </Formik>
           </div>
           <div className={css.btns}>

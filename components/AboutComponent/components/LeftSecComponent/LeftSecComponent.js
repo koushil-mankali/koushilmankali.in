@@ -1,5 +1,3 @@
-import React from "react";
-
 import css from './LeftSecComponent.module.css'
 
 import Image from 'next/image'

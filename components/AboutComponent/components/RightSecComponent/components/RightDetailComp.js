@@ -1,4 +1,3 @@
-import React from "react";
 import css from "./DetailComponent.module.css";
 
 const RightDetailComponent = ({ txt, ttl, dur }) => {

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import css from './RightSecComponent.module.css'
 
 import LeftDetailComponent from './components/LeftDetailComponent';

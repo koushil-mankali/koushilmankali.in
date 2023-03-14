@@ -12,6 +12,7 @@ import ucloneImg from "../../public/Images/projects/udemy-clone.png";
 import zomatoCImg from "../../public/Images/projects/zomato-clone.png";
 import portfolioImg from "../../public/Images/projects/portfolio.png";
 import texttospeechappImg from "../../public/Images/projects/texttospeechapp.png";
+import udemyhomepageImg from "../../public/Images/postImages/udemyclone/udemyhomepage.png";
 
 import GreyBtn from "../Button/GreyBtn/Button";
 import ProjectCard from "../Cards/ProjectCard/ProjectCard";
@@ -59,6 +60,17 @@ const ProjectsComponent = () => {
       live: "https://covidhd.koushilmankali.in/",
       git: "https://github.com/koushil-mankali/covid-help-disk-frontend",
       type: ["frontend", "backend", "mern"],
+    },
+    {
+      img: udemyhomepageImg,
+      link: "/posts/udemy-clone-project",
+      ttl: "Uclone(Udemy Clone)",
+      desc: "Uclone its a Udemy replica which have almost all features like udemy.",
+      stack: "React, MERN, Node, Express, MongoDB, Mongoose, JavaScript",
+      video: "https://youtu.be/fE0tml6ryrI",
+      live: "https://uclone.koushilmankali.in/",
+      git: "https://github.com/koushil-mankali/udemy-clone-frontend",
+      type: ["frontend", "backend"],
     },
     {
       img: netflixImg,

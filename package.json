@@ -1,8 +1,8 @@
 {
-  "name": "koushilmankali.com",
+  "name": "koushilmankali.in",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://koushilmankali.com",
+  "homepage": "https://koushilmankali.in",
   "scripts": {
     "prebuild": "node lib/sitemapcjs.js",
     "dev": "node server.js",

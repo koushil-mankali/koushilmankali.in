@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -56,7 +56,7 @@ const Navbar = () => {
       const observer = new IntersectionObserver(changeNavTab, options);
 
       divs.forEach((ele) => {
-        if(ele){
+        if (ele) {
           observer?.observe(ele);
         }
       });
@@ -110,7 +110,7 @@ const Navbar = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://blog.koushilmankali.com/"
+          href="https://blog.koushilmankali.in/"
         >
           <div
             className={

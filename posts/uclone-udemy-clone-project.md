@@ -5,11 +5,13 @@ date: "2022-09-21T18:30:00.000Z"
 number: 3
 image: "uclone.png"
 gitHub: "https://github.com/koushil-mankali/uclone"
-liveSite: "https://uclone.koushilmankali.in/"
+liveSite: "#"
 slug: "posts/uclone-udemy-clone-project"
 discreption: "uclone udemy clone project using PHP and MySQL"
 keywords: "uclone, udemy clone, udemy clone using php and mysql, learning management system project, learning management system project,php project, udemy project, php project with source code, koushil, koushil mankali"
 ---
+
+### _Sorry this project has been taken down from hosting, so you can't view live webapp, but still you can view/get the source code from github._
 
 Stack : PHP and MySQL
 

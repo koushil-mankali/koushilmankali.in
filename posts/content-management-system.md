@@ -6,10 +6,12 @@ number: 7
 image: "blogcms.png"
 slug: "posts/content-management-system"
 gitHub: "https://github.com/koushil-mankali/blog-content-management-system"
-liveSite: "https://blogcms.koushilmankali.in/"
+liveSite: "#"
 discreption: "Content Management System (CMS) project using PHP and MySQL"
 keywords: "CMS, content management system, php project, cms project, php project with source code, koushil, koushil mankali"
 ---
+
+### _Sorry this project has been taken down from hosting, so you can't view live webapp, but still you can view/get the source code from github._
 
 Stack : PHP and MySQL
 
