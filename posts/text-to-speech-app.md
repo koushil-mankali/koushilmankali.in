@@ -21,7 +21,7 @@ I have used JavaScript core Web Speech API.
 
 #### Home Page
 
-![home page](/Images/postImages/TextToSpeech/textToSpeech.png)
+![home page](/Images/postImages/textToSpeech.png)
 
 \***\* Important Note\*\***
 
