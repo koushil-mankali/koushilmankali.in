@@ -18,6 +18,7 @@ import expressjsImg from "../../public/Images/Skills/expressjs.svg";
 import mongodbImg from "../../public/Images/Skills/mongodb.svg";
 import nestjsImg from "../../public/Images/Skills/nestjs.png";
 import mongooseImg from "../../public/Images/Skills/mongoose.png";
+import astroJSImg from "../../public/Images/Skills/astrojs.png";
 
 import jwtImg from "../../public/Images/Skills/jwt.png";
 import githubImg from "../../public/Images/Skills/github.png";
@@ -50,142 +51,147 @@ const SkillsComponent = () => {
     {
       imgSrc: javascriptImg,
       name: "Javascript",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: reactjsImg,
       name: "React Js",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: nextjsImg,
       name: "Next Js",
-      type: "frontend",
+      type: ["frontend", "backend"],
     },
     {
       imgSrc: reduxImg,
       name: "Redux",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: nodejsImg,
       name: "Node Js",
-      type: "backend",
+      type: ["backend"],
     },
     {
       imgSrc: expressjsImg,
       name: "Express Js",
-      type: "backend",
+      type: ["backend"],
     },
     {
       imgSrc: nestjsImg,
       name: "Nest Js",
-      type: "backend",
+      type: ["backend"],
     },
     {
       imgSrc: mongodbImg,
       name: "MongoDB",
-      type: "backend",
+      type: ["backend"],
     },
     {
       imgSrc: mongooseImg,
       name: "Mongoose",
-      type: "backend",
+      type: ["backend"],
+    },
+    {
+      imgSrc: astroJSImg,
+      name: "Astro",
+      type: ["frontend", "backend"],
     },
     {
       imgSrc: apolloGraphQLImg,
       name: "Apollo GraphQL Client",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: apolloGraphQLImg,
       name: "Apollo GraphQL Server",
-      type: "backend",
+      type: ["backend"],
     },
     {
       imgSrc: "restapi",
       name: "REST Api",
-      type: "service",
+      type: ["service"],
     },
     {
       imgSrc: graphQLImg,
       name: "GraphQL",
-      type: "service",
+      type: ["service"],
     },
     {
       imgSrc: reactrouterImg,
       name: "React Router",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: html5Img,
       name: "HTML",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: css3Img,
       name: "CSS",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: sassImg,
       name: "SASS",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: bootstrapImg,
       name: "Bootstrap",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: materialuiImg,
       name: "Material UI",
-      type: "frontend",
+      type: ["frontend"],
     },
     {
       imgSrc: jwtImg,
       name: "JWT",
-      type: "tools",
+      type: ["tools"],
     },
     {
       imgSrc: gitImg,
       name: "GIT",
-      type: "tools",
+      type: ["tools"],
     },
     {
       imgSrc: githubImg,
       name: "Gighub",
-      type: "tools",
+      type: ["tools"],
     },
     {
       imgSrc: vitejsImg,
       name: "Vite Js",
-      type: "tools",
+      type: ["tools"],
     },
     {
       imgSrc: npmImg,
       name: "NPM",
-      type: "tools",
+      type: ["tools"],
     },
     {
       imgSrc: yarnImg,
       name: "Yarn",
-      type: "tools",
+      type: ["tools"],
     },
     {
       imgSrc: vscodeImg,
       name: "VSCode",
-      type: "tools",
+      type: ["tools"],
     },
     {
       imgSrc: postmanImg,
       name: "Postman",
-      type: "tools",
+      type: ["tools"],
     },
     {
       imgSrc: jestImg,
       name: "Jest",
-      type: "testing",
+      type: ["testing"],
     },
   ];
 
@@ -203,31 +209,31 @@ const SkillsComponent = () => {
     });
   } else if (active.frontend) {
     cardData = data?.filter((item) => {
-      if (item.type === "frontend") {
+      if (item.type.includes("frontend")) {
         return item;
       }
     });
   } else if (active.backend) {
     cardData = data?.filter((item) => {
-      if (item.type === "backend") {
+      if (item.type.includes("backend")) {
         return item;
       }
     });
   } else if (active.testing) {
     cardData = data?.filter((item) => {
-      if (item.type === "testing") {
+      if (item.type.includes("testing")) {
         return item;
       }
     });
   } else if (active.tools) {
     cardData = data?.filter((item) => {
-      if (item.type === "tools") {
+      if (item.type.includes("tools")) {
         return item;
       }
     });
   } else if (active.service) {
     cardData = data?.filter((item) => {
-      if (item.type === "service") {
+      if (item.type.includes("service")) {
         return item;
       }
     });
