@@ -26,10 +26,14 @@ import gitImg from "../../public/Images/Skills/git.svg";
 import vitejsImg from "../../public/Images/Skills/vitejs.svg";
 import npmImg from "../../public/Images/Skills/npm.svg";
 import yarnImg from "../../public/Images/Skills/yarn.png";
+import pnpmImg from "../../public/Images/Skills/pnpm.svg";
 import vscodeImg from "../../public/Images/Skills/vscode.png";
 import postmanImg from "../../public/Images/Skills/postman.png";
 
 import jestImg from "../../public/Images/Skills/jest.png";
+import chaiImg from "../../public/Images/Skills/chai.png";
+import mochaImg from "../../public/Images/Skills/mocha.svg";
+import sinonImg from "../../public/Images/Skills/sinon.png";
 
 import graphQLImg from "../../public/Images/Skills/graphql.png";
 import apolloGraphQLImg from "../../public/Images/Skills/apollographql.png";
@@ -179,6 +183,11 @@ const SkillsComponent = () => {
       type: ["tools"],
     },
     {
+      imgSrc: pnpmImg,
+      name: "Pnpm",
+      type: ["tools"],
+    },
+    {
       imgSrc: vscodeImg,
       name: "VSCode",
       type: ["tools"],
@@ -191,6 +200,21 @@ const SkillsComponent = () => {
     {
       imgSrc: jestImg,
       name: "Jest",
+      type: ["testing"],
+    },
+    {
+      imgSrc: chaiImg,
+      name: "Chai",
+      type: ["testing"],
+    },
+    {
+      imgSrc: mochaImg,
+      name: "Mocha",
+      type: ["testing"],
+    },
+    {
+      imgSrc: sinonImg,
+      name: "Sinon",
       type: ["testing"],
     },
   ];
