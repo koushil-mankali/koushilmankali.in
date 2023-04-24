@@ -1,6 +1,6 @@
 ---
 url: "udemy-clone-project"
-title: "Udemy Clone"
+title: "Udemy Clone (OLD)"
 date: "2023-01-21T18:30:00.000Z"
 number: 3
 image: "udemyhomepage.png"
