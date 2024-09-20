@@ -38,6 +38,12 @@ import sinonImg from "../../public/Images/Skills/sinon.png";
 import graphQLImg from "../../public/Images/Skills/graphql.png";
 import apolloGraphQLImg from "../../public/Images/Skills/apollographql.png";
 
+import d365 from "../../public/Images/Skills/d365.png";
+import powerapps from "../../public/Images/Skills/powerapps.jpeg";
+import powerautomate from "../../public/Images/Skills/powerautomate.png";
+import powerpages from "../../public/Images/Skills/powerpages.png";
+import xrmtoolbox from "../../public/Images/Skills/xrmtoolbox.jpg";
+
 import SkillCard from "../Cards/SkillCard/SkillCard";
 import GreyBtn from "../Button/GreyBtn/Button";
 
@@ -49,6 +55,7 @@ const SkillsComponent = () => {
     tools: false,
     testing: false,
     service: false,
+    lowcode: false,
   });
 
   const data = [
@@ -217,6 +224,31 @@ const SkillsComponent = () => {
       name: "Sinon",
       type: ["testing"],
     },
+    {
+      imgSrc: d365,
+      name: "D365",
+      type: ["lowcode"],
+    },
+    {
+      imgSrc: powerapps,
+      name: "Power Apps",
+      type: ["lowcode"],
+    },
+    {
+      imgSrc: powerpages,
+      name: "Power Pages",
+      type: ["lowcode"],
+    },
+    {
+      imgSrc: powerautomate,
+      name: "Power Automate",
+      type: ["lowcode"],
+    },
+    {
+      imgSrc: xrmtoolbox,
+      name: "Xrm Tool Box",
+      type: ["lowcode"],
+    },
   ];
 
   const handleBtn = (key) => {
@@ -261,6 +293,12 @@ const SkillsComponent = () => {
         return item;
       }
     });
+  } else if (active.lowcode) {
+    cardData = data?.filter((item) => {
+      if (item.type.includes("lowcode")) {
+        return item;
+      }
+    });
   }
 
   return (
@@ -300,6 +338,12 @@ const SkillsComponent = () => {
             txt="Services"
             onClick={() => handleBtn("service")}
             isActive={active?.service}
+          />
+
+          <GreyBtn
+            txt="Low Code"
+            onClick={() => handleBtn("lowcode")}
+            isActive={active?.lowcode}
           />
         </div>
         <div className={css.bdy}>
