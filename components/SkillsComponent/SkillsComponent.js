@@ -34,6 +34,7 @@ import jestImg from "../../public/Images/Skills/jest.png";
 import chaiImg from "../../public/Images/Skills/chai.png";
 import mochaImg from "../../public/Images/Skills/mocha.svg";
 import sinonImg from "../../public/Images/Skills/sinon.png";
+import shadcnImg from "../../public/Images/Skills/shadcn.png";
 
 import graphQLImg from "../../public/Images/Skills/graphql.png";
 import apolloGraphQLImg from "../../public/Images/Skills/apollographql.png";
@@ -157,6 +158,11 @@ const SkillsComponent = () => {
     {
       imgSrc: materialuiImg,
       name: "Material UI",
+      type: ["frontend"],
+    },
+    {
+      imgSrc: shadcnImg,
+      name: "Shadcn",
       type: ["frontend"],
     },
     {
