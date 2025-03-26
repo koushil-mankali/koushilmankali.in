@@ -2,6 +2,10 @@ import { useState } from "react";
 
 import css from "./SkillsComponent.module.css";
 
+import geminiImg from "../../public/Images/Skills/gemini.png";
+import openaiImg from "../../public/Images/Skills/openai.png";
+import aiImg from "../../public/Images/Skills/ai.svg";
+
 import javascriptImg from "../../public/Images/Skills/javascript.svg";
 import typescriptImg from "../../public/Images/Skills/typescript.png";
 import reactjsImg from "../../public/Images/Skills/reactjs.svg";
@@ -52,6 +56,7 @@ import GreyBtn from "../Button/GreyBtn/Button";
 const SkillsComponent = () => {
   const [active, setActive] = useState({
     all: true,
+    ai: false,
     frontend: false,
     backend: false,
     tools: false,
@@ -61,6 +66,26 @@ const SkillsComponent = () => {
   });
 
   const data = [
+    {
+      imgSrc: geminiImg,
+      name: "Gemini AI",
+      type: ["ai"],
+    },
+    {
+      imgSrc: openaiImg,
+      name: "OpenAI GPT",
+      type: ["ai"],
+    },
+    {
+      imgSrc: aiImg,
+      name: "AI Agents",
+      type: ["ai"],
+    },
+    {
+      imgSrc: aiImg,
+      name: "Agentic AI",
+      type: ["ai"],
+    },
     {
       imgSrc: javascriptImg,
       name: "Javascript",
