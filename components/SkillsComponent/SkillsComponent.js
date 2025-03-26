@@ -50,6 +50,8 @@ import powerautomate from "../../public/Images/Skills/powerautomate.png";
 import powerpages from "../../public/Images/Skills/powerpages.png";
 import xrmtoolbox from "../../public/Images/Skills/xrmtoolbox.jpg";
 
+import azureImg from "../../public/Images/Skills/azure.png";
+
 import SkillCard from "../Cards/SkillCard/SkillCard";
 import GreyBtn from "../Button/GreyBtn/Button";
 
@@ -63,6 +65,7 @@ const SkillsComponent = () => {
     testing: false,
     service: false,
     lowcode: false,
+    cloud: false,
   });
 
   const data = [
@@ -286,6 +289,11 @@ const SkillsComponent = () => {
       name: "Xrm Tool Box",
       type: ["lowcode"],
     },
+    {
+      imgSrc: azureImg,
+      name: "Azure",
+      type: ["cloud"],
+    },
   ];
 
   const handleBtn = (key) => {
@@ -336,6 +344,12 @@ const SkillsComponent = () => {
         return item;
       }
     });
+  } else if (active.cloud) {
+    cardData = data?.filter((item) => {
+      if (item.type.includes("cloud")) {
+        return item;
+      }
+    });
   } else if (active.lowcode) {
     cardData = data?.filter((item) => {
       if (item.type.includes("lowcode")) {
@@ -381,13 +395,16 @@ const SkillsComponent = () => {
             onClick={() => handleBtn("testing")}
             isActive={active?.testing}
           />
-
           <GreyBtn
             txt="Services"
             onClick={() => handleBtn("service")}
             isActive={active?.service}
           />
-
+          <GreyBtn
+            txt="Cloud"
+            onClick={() => handleBtn("cloud")}
+            isActive={active?.cloud}
+          />
           <GreyBtn
             txt="Low Code"
             onClick={() => handleBtn("lowcode")}
