@@ -300,6 +300,12 @@ const SkillsComponent = () => {
     cardData = data?.filter((item) => {
       return item;
     });
+  } else if (active.ai) {
+    cardData = data?.filter((item) => {
+      if (item.type.includes("ai")) {
+        return item;
+      }
+    });
   } else if (active.frontend) {
     cardData = data?.filter((item) => {
       if (item.type.includes("frontend")) {
@@ -349,6 +355,11 @@ const SkillsComponent = () => {
             txt="All"
             onClick={() => handleBtn("all")}
             isActive={active?.all}
+          />
+          <GreyBtn
+            txt="AI"
+            onClick={() => handleBtn("ai")}
+            isActive={active?.ai}
           />
           <GreyBtn
             txt="Frontend"
