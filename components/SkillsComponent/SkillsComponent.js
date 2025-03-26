@@ -3,6 +3,7 @@ import { useState } from "react";
 import css from "./SkillsComponent.module.css";
 
 import javascriptImg from "../../public/Images/Skills/javascript.svg";
+import typescriptImg from "../../public/Images/Skills/typescript.png";
 import reactjsImg from "../../public/Images/Skills/reactjs.svg";
 import nextjsImg from "../../public/Images/Skills/nextjs.png";
 import reduxImg from "../../public/Images/Skills/redux.svg";
@@ -63,7 +64,12 @@ const SkillsComponent = () => {
     {
       imgSrc: javascriptImg,
       name: "Javascript",
-      type: ["frontend"],
+      type: ["frontend", "backend"],
+    },
+    {
+      imgSrc: typescriptImg,
+      name: "Typescript",
+      type: ["frontend", "backend"],
     },
     {
       imgSrc: reactjsImg,
