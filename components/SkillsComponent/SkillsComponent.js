@@ -90,6 +90,11 @@ const SkillsComponent = () => {
       type: ["ai"],
     },
     {
+      imgSrc: aiImg,
+      name: "AI Workflows",
+      type: ["ai"],
+    },
+    {
       imgSrc: javascriptImg,
       name: "Javascript",
       type: ["frontend", "backend"],
