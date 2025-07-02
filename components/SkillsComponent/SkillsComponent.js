@@ -375,6 +375,12 @@ const SkillsComponent = () => {
         return item;
       }
     });
+  } else if (active.archPatt) {
+    cardData = data?.filter((item) => {
+      if (item.type.includes("archPatt")) {
+        return item;
+      }
+    });
   }
 
   return (
@@ -428,6 +434,11 @@ const SkillsComponent = () => {
             txt="Low Code"
             onClick={() => handleBtn("lowcode")}
             isActive={active?.lowcode}
+          />
+          <GreyBtn
+            txt="Architectural Patterns"
+            onClick={() => handleBtn("archPatt")}
+            isActive={active?.archPatt}
           />
         </div>
         <div className={css.bdy}>
