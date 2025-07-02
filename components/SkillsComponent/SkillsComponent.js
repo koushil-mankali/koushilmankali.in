@@ -52,8 +52,8 @@ import xrmtoolbox from "../../public/Images/Skills/xrmtoolbox.jpg";
 
 import azureImg from "../../public/Images/Skills/azure.png";
 
-import singleSpaImg from "../../public/Images/Skills/single-spa.png";
-import placeholderImg from "../../public/Images/Skills/placeholder.png";
+import singleSpaImg from "../../public/Images/Skills/singlespa.png";
+import placeholderImg from "../../public/Images/Skills/placeholderImg.png";
 
 import SkillCard from "../Cards/SkillCard/SkillCard";
 import GreyBtn from "../Button/GreyBtn/Button";
