@@ -13,6 +13,7 @@ import zomatoCImg from "../../public/Images/projects/zomato-clone.png";
 import portfolioImg from "../../public/Images/projects/portfolio.png";
 import texttospeechappImg from "../../public/Images/projects/texttospeechapp.png";
 import udemyhomepageImg from "../../public/Images/postImages/udemyclone/udemyhomepage.png";
+import browserMindAIImg from "../../public/Images/projects/broswermindai.png";
 
 import GreyBtn from "../Button/GreyBtn/Button";
 import ProjectCard from "../Cards/ProjectCard/ProjectCard";
@@ -24,9 +25,21 @@ const ProjectsComponent = () => {
     backend: false,
     mern: false,
     hcj: false,
+    ai: false,
   });
 
   const data = [
+    {
+      img: browserMindAIImg,
+      link: "/posts/browser-mind-ai",
+      ttl: "BrowserMind AI",
+      desc: "BrowserMind AI is developed using Broswer provided AI tools without making call to external AI Tools.",
+      stack: "React Js, Next Js, HTML, CSS, JavaScript",
+      video: "/",
+      live: "https://browsermindai.koushilmankali.in/",
+      git: "https://github.com/koushil-mankali/BrowserMindAI",
+      type: ["frontend", "backend", "mern", "ai"],
+    },
     {
       img: portfolioImg,
       link: "/posts/koushil-mankali-portfolio",
