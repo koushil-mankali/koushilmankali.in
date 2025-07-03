@@ -194,6 +194,12 @@ const ProjectsComponent = () => {
         return item;
       }
     });
+  } else if (active.ai) {
+    cardData = data?.filter((item) => {
+      if (item.type.includes("ai")) {
+        return item;
+      }
+    });
   }
 
   const handleBtn = (key) => {
@@ -213,6 +219,11 @@ const ProjectsComponent = () => {
             txt="All"
             onClick={() => handleBtn("all")}
             isActive={active?.all}
+          />
+          <GreyBtn
+            txt="AI"
+            onClick={() => handleBtn("ai")}
+            isActive={active?.hcj}
           />
           <GreyBtn
             txt="Frontend"
